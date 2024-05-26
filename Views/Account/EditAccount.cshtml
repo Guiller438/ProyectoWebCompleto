@@ -1,0 +1,52 @@
+﻿@model IW7PP.Models.UserModel
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Registro</title>
+
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+            <h2>Editar perfil de usuario</h2>
+            <form asp-controller="Account" asp-action="EditAccount" class="card-body" method="post">
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input required asp-for="Name" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="LastName">Apellido:</label>
+                    <input required asp-for="LastName" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="UserName">Número de cédula:</label>
+                    <input required asp-for="UserName">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Número de Teléfono:</label>
+                    <input required asp-for="PhoneNumber">
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input required asp-for="Email">
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Editar">
+                </div>
+                @if (ViewData["Mensaje"] != null)
+                {
+                    <div class="alert alert-danger" role="alert">
+                        @ViewData["Mensaje"]
+                    </div>
+                }
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
