@@ -1,98 +1,44 @@
 ﻿@model IW7PP.ViewModel.LoginVM
+
 @{
-    Layout = null;
+    ViewData["Title"] = "Inicia Sesión";
 }
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Registro</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 500px; /* Reducir el tamaño máximo */
-            width: 100%;
-            overflow: hidden;
-            margin: 10px; /* Reducir el margen */
-        }
-
-        .card-body {
-            padding: 10px; /* Reducir el padding */
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 10px; /* Reducir el margen inferior */
-            font-size: 20px; /* Ajustar tamaño de la fuente */
-        }
-
-        .form-group {
-            margin-bottom: 8px; /* Reducir el margen inferior */
-        }
-
-            .form-group label {
-                display: block;
-                margin-bottom: 3px; /* Reducir el margen inferior */
-                font-size: 14px; /* Ajustar tamaño de la fuente */
-            }
-
-            .form-group input {
-                width: 100%;
-                padding: 6px; /* Reducir el padding */
-                box-sizing: border-box;
-                font-size: 14px; /* Ajustar tamaño de la fuente */
-            }
-
-                .form-group input[type="submit"] {
-                    background-color: #4CAF50;
-                    color: white;
-                    border: none;
-                    cursor: pointer;
-                    width: 100%;
-                    padding: 8px; /* Reducir el padding */
-                    font-size: 14px; /* Ajustar tamaño de la fuente */
-                }
-
-                    .form-group input[type="submit"]:hover {
-                        background-color: #45a049;
-                    }
-    </style>
+    <title>@ViewData["Title"] - IW7PP</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
-    <div class="card">
-        <div class="card-body">
-            <h2>Inicia Sesión</h2>
-            <form asp-controller="Users" asp-action="Login" class="card-body">
-                <div class="form-group">
-                    <label >Ingresa tú número de cédula:</label>
-                    <input type="text" required asp-for="UserName">
-                </div>
-                <div class="form-group">
-                    <label for="contrasena">Contraseña:</label>
-                    <input type="password" required asp-for="Password">
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Iniciar Sesión">
-                </div>
-                <div class="form-group">
-                    <a asp-controller="Users" asp-action="Registro">¿No tienes una cuenta? </a>
-                </div>
-            </form>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card shadow-sm" style="max-width: 400px; width: 100%;">
+            <div class="card-body">
+                <h2 class="card-title text-center">Inicia Sesión</h2>
+                <form asp-controller="Users" asp-action="Login">
+                    <div class="form-group mb-3">
+                        <label for="UserName">Ingresa tú número de cédula:</label>
+                        <input type="text" class="form-control" id="UserName" asp-for="UserName" required />
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="Password">Contraseña:</label>
+                        <input type="password" class="form-control" id="Password" asp-for="Password" required />
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="submit" class="btn btn-primary w-100" value="Iniciar Sesión" />
+                    </div>
+                    <div class="form-group text-center">
+                        <a asp-controller="Users" asp-action="Registro">¿No tienes una cuenta? Regístrate</a>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 </body>
 </html>
