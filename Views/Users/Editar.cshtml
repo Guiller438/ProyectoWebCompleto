@@ -1,0 +1,48 @@
+﻿@model Microsoft.AspNetCore.Identity.IdentityUser
+
+@{
+    ViewData["Title"] = "Editar rol";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+    <div class="card-body">
+        <h3 class="card-title text-center">Editar Rol</h3>
+
+        <form asp-controller="Users" asp-action="Editar" method="post">
+
+            <input type="hidden" asp-for="Id" />
+
+            <div class="text-danger" asp-validation-summary="All"></div>
+            <div class="row mt-4">
+                <div class="col-sm-6 offset-3">
+
+                    <div class="mb-3">
+                        <label asp-for="UserName" class="col-md-4">Número de cédula</label>
+                        <input asp-for="UserName" class="form-control" placeholder="Número de cédula" />
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                        <label asp-for="Email" class="col-md-4">Email</label>
+                        <input asp-for="Email" class="form-control" placeholder="Email" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                        <label asp-for="PhoneNumber" class="col-md-4">Número de teléfono</label>
+                        <input asp-for="PhoneNumber" class="form-control" placeholder="Número de cédula" />
+                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-10 offset-2">
+                            <button type="submit" class="btn btn-success w-75 btn-lg">Editar Usuario <i class="bi bi-arrow-right-circle-fill"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+

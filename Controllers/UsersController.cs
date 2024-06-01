@@ -1,8 +1,11 @@
-﻿using IW7PP.Models;
+﻿using IW7PP.Data;
+using IW7PP.Models;
+
 using IW7PP.ViewModel;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 using System.Text.RegularExpressions;
 
 namespace IW7PP.Controllers
@@ -12,16 +15,20 @@ namespace IW7PP.Controllers
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly ApplicationDbContext _context;
 
-        public UsersController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager, RoleManager<IdentityRole> roleManager)
+        public UsersController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager, RoleManager<IdentityRole> roleManager, ApplicationDbContext context)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _context = context;
             _roleManager = roleManager;
         }
+        [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            var users = _context.Users.ToList();
+            return View(users);
         }
 
         [HttpGet]
@@ -124,5 +131,61 @@ namespace IW7PP.Controllers
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
+
+
+        //Metodos para editar y eliminar usuarios
+
+        [HttpGet]
+        public IActionResult Editar(string id)
+        {
+            if (id == null)
+            {
+                return RedirectToAction("Users", "Registro");
+            }
+            else
+            {
+                var userDB = _context.Users.FirstOrDefault(u => u.Id == id);
+                return View(userDB);
+            }
+
+        }
+
+
+        public async Task<IActionResult> Editar(IdentityUser user)
+        {
+            var userDb = _context.Users.FirstOrDefault(u => u.Id == u.Id);
+            if (userDb == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                userDb.UserName = user.UserName;
+                userDb.Email = user.Email;
+                userDb.PhoneNumber = user.PhoneNumber;
+                var resultado = await _userManager.UpdateAsync(userDb);
+                return RedirectToAction(nameof(Index));
+            }
+        }
+
+
+        [HttpPost]
+
+        public async Task<IActionResult> Borrar(string id)
+        {
+            var userDB = _context.Users.FirstOrDefault(u => u.Id == id);
+            if (userDB == null)
+            {
+                TempData["Error"] = "No existe el rol";
+                return RedirectToAction(nameof(Index));
+            }
+
+
+            await _userManager.DeleteAsync(userDB);
+            TempData["Correcto"] = "Rol borrado correctamente";
+            return RedirectToAction(nameof(Index));
+        }
+
+
     }
 }

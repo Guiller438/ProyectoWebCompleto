@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\views\\role\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\role\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\views\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\views\\account\\editaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\account\\editaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\views\\users\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\users\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,73 +19,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Editar.cshtml",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Role\\Editar.cshtml",
-              "RelativeDocumentMoniker": "Views\\Role\\Editar.cshtml",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Role\\Editar.cshtml",
-              "RelativeToolTip": "Views\\Role\\Editar.cshtml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-26T21:20:14.686Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Role\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Role\\Index.cshtml",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Role\\Index.cshtml",
-              "RelativeToolTip": "Views\\Role\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Index.cshtml",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "Views\\Users\\Index.cshtml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-26T21:15:56.859Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EditAccount.cshtml",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Account\\EditAccount.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\EditAccount.cshtml",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Account\\EditAccount.cshtml",
-              "RelativeToolTip": "Views\\Account\\EditAccount.cshtml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-26T21:13:21.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-26T20:51:29.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Registro.cshtml",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Users\\Registro.cshtml",
-              "RelativeDocumentMoniker": "Views\\Users\\Registro.cshtml",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Users\\Registro.cshtml",
-              "RelativeToolTip": "Views\\Users\\Registro.cshtml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-26T20:47:44.977Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Users\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Users\\Login.cshtml",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Users\\Login.cshtml",
-              "RelativeToolTip": "Views\\Users\\Login.cshtml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-26T20:46:44.016Z",
+              "WhenOpened": "2024-06-01T14:25:49.003Z",
               "EditorCaption": ""
             }
           ]
