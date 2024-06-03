@@ -3,6 +3,38 @@
   "WorkspaceRootPath": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Migrations\\20240603235010_AddandSeedDataForAmputationsModelsProsthesisModelsandClienteModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240603235010_AddandSeedDataForAmputationsModelsProsthesisModelsandClienteModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\controllers\\componentscontrollers\\kneearticulatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:controllers\\componentscontrollers\\kneearticulatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\models\\prosthesism\\foot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:models\\prosthesism\\foot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\models\\prosthesism\\liner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:models\\prosthesism\\liner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\models\\prosthesism\\prosthesis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:models\\prosthesism\\prosthesis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -19,14 +51,109 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20240603235010_AddandSeedDataForAmputationsModelsProsthesisModelsandClienteModel.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Migrations\\20240603235010_AddandSeedDataForAmputationsModelsProsthesisModelsandClienteModel.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240603235010_AddandSeedDataForAmputationsModelsProsthesisModelsandClienteModel.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Migrations\\20240603235010_AddandSeedDataForAmputationsModelsProsthesisModelsandClienteModel.cs",
+              "RelativeToolTip": "Migrations\\20240603235010_AddandSeedDataForAmputationsModelsProsthesisModelsandClienteModel.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T23:50:10.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T23:48:34.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "KneeArticulateController.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Controllers\\ComponentsControllers\\KneeArticulateController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ComponentsControllers\\KneeArticulateController.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Controllers\\ComponentsControllers\\KneeArticulateController.cs",
+              "RelativeToolTip": "Controllers\\ComponentsControllers\\KneeArticulateController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T23:46:48.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Foot.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Models\\ProsthesisM\\Foot.cs",
+              "RelativeDocumentMoniker": "Models\\ProsthesisM\\Foot.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Models\\ProsthesisM\\Foot.cs",
+              "RelativeToolTip": "Models\\ProsthesisM\\Foot.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T23:46:22.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Liner.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Models\\ProsthesisM\\Liner.cs",
+              "RelativeDocumentMoniker": "Models\\ProsthesisM\\Liner.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Models\\ProsthesisM\\Liner.cs",
+              "RelativeToolTip": "Models\\ProsthesisM\\Liner.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T23:46:18.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Prosthesis.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Models\\ProsthesisM\\Prosthesis.cs",
+              "RelativeDocumentMoniker": "Models\\ProsthesisM\\Prosthesis.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Models\\ProsthesisM\\Prosthesis.cs",
+              "RelativeToolTip": "Models\\ProsthesisM\\Prosthesis.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T23:46:10.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T20:33:26.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T14:36:49.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Users\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Users\\Index.cshtml",
               "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Users\\Index.cshtml",
               "RelativeToolTip": "Views\\Users\\Index.cshtml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-01T14:25:49.003Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T14:25:49.003Z"
             }
           ]
         }

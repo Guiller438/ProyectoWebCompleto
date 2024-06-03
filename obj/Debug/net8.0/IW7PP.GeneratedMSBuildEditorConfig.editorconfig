@@ -30,6 +30,30 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFZGl0QWNjb3VudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Amputations/CreateAlp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1wdXRhdGlvbnNcQ3JlYXRlQWxwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Amputations/CreateUap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1wdXRhdGlvbnNcQ3JlYXRlVWFwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Amputations/EditAlp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1wdXRhdGlvbnNcRWRpdEFscC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Amputations/EditUap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1wdXRhdGlvbnNcRWRpdFVhcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Amputations/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1wdXRhdGlvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Amputations/LowerLimbAmputations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1wdXRhdGlvbnNcTG93ZXJMaW1iQW1wdXRhdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/guill/Desktop/IW7/IW7PP/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
