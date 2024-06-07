@@ -1,0 +1,128 @@
+﻿@model IEnumerable<IW7PP.Models.ProsthesisM.Prosthesis>
+
+@{
+    ViewData["Title"] = "Administración de prótesis creadas";
+}
+
+<h1 class="text-center my-4">Administración de prótesis</h1>
+
+<div class="container mb-5 pb-5">
+    <div class="row mb-3">
+        <div class="col-sm-3 offset-sm-9">
+            <a asp-action="CreateProsthesis" asp-controller="Prosthesis" class="btn btn-primary w-100">Crear Nueva prótesis</a>
+        </div>
+    </div>
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">Lista de prótesis</h3>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                @if (Model.Count() > 0)
+                {
+                    <table class="table table-bordered table-striped" id="tablaProtesis" width="100%" cellspacing="0">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Id</th>
+                                <th>Liner</th>
+                                <th>Tube</th>
+                                <th>Foot</th>
+                                <th>Union Socket</th>
+                                <th>Knee Articulate</th>
+                                <th>Upper Limb Amputations</th>
+                                <th>Lower Limb Amputations</th>
+                                <th>Durability</th>
+                                <th>Average Durability</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(m => item.Id)</td>
+                                    <td>@Html.DisplayFor(m => item.Liner.Name)</td>
+                                    <td>@Html.DisplayFor(m => item.Tube.Name)</td>
+                                    <td>@Html.DisplayFor(m => item.Foot.Name)</td>
+                                    <td>@Html.DisplayFor(m => item.UnionSocket.Name)</td>
+                                    <td>@Html.DisplayFor(m => item.RodillaArticulada.Name)</td>
+                                    <td>@Html.DisplayFor(m => item.UpperLimbAmputations.AmputationName)</td>
+                                    <td>@Html.DisplayFor(m => item.LowerLimbAmputations.AmputationName)</td>
+                                    <td>@Html.DisplayFor(m => item.Durability)</td>
+                                    <td>@Html.DisplayFor(m => item.AverageDurability)</td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Acciones">
+                                            <a class="btn btn-sm btn-primary" href="@Url.Action("Editar", "Prosthesis", new { id = item.Id })">Editar</a>
+                                            <form asp-action="Borrar" asp-route-id="@item.Id" class="d-inline-block" method="post">
+                                                <button type="submit" onclick="return confirm('¿Está seguro de borrar este registro?')" class="btn btn-sm btn-danger">Borrar</button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <p class="text-center">No hay registros</p>
+                }
+            </div>
+            <!-- Adding buttons below the table -->
+            <div class="mt-4 row">
+                <div class="col">
+                    <a asp-action="FeetView" asp-controller="Prosthesis" class="btn btn-secondary w-100 mx-2">Feets</a>
+                </div>
+                <div class="col">
+                    <a asp-action="KneeArticulateView" asp-controller="Prosthesis" class="btn btn-secondary w-100 mx-2">Knees </a>
+                </div>
+                <div class="col">
+                    <a asp-action="LinerView" asp-controller="Prosthesis" class="btn btn-secondary w-100 mx-2">Liners</a>
+                </div>
+                <div class="col">
+                    <a asp-action="SocketView" asp-controller="Prosthesis" class="btn btn-secondary w-100 mx-2">Sockets</a>
+                </div>
+                <div class="col">
+                    <a asp-action="TubesView" asp-controller="Prosthesis" class="btn btn-secondary w-100 mx-2">Tubes</a>
+                </div>
+                <div class="col">
+                    <a asp-action="UnionSocketsView" asp-controller="Prosthesis" class="btn btn-secondary w-100 mx-2">Socket Unions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        $(document).ready(function () {
+            $('#tablaProtesis').DataTable({
+                language: {
+                    "decimal": "",
+                    "emptyTable": "No hay información",
+                    "info": "Mostrando _START_ a _END_ de _TOTAL_ entradas",
+                    "infoEmpty": "Mostrando 0 a 0 de 0 entradas",
+                    "infoFiltered": "(filtrado de _MAX_ entradas totales)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Mostrar _MENU_ entradas",
+                    "loadingRecords": "Cargando...",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "No se encontraron registros coincidentes",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Último",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    }
+                }
+            });
+        });
+    </script>
+}
+x

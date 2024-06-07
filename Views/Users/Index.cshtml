@@ -1,30 +1,32 @@
 ﻿@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityUser>
 
-
 @{
     ViewData["Title"] = "Administración de usuarios";
 }
 
-
 <h1 class="text-center my-4">Administración de usuarios</h1>
 
 <div class="container mb-5 pb-5">
-    <div class="row mb-3">
+    <div class="row mb-3 justify-content-center">
+        <div class="col-sm-3">
+            <a asp-action="CreateUser" asp-controller="Users" class="btn btn-primary w-100">Crear Nuevo Usuario</a>
+        </div>
     </div>
     <div class="card shadow-sm">
         <div class="card-header bg-primary text-white">
-            <h3 class="mb-0">Lista de roles</h3>
+            <h3 class="mb-0">Lista de usuarios</h3>
         </div>
         <div class="card-body">
             <div class="table-responsive">
                 @if (Model.Count() > 0)
                 {
-                    <table class="table table-bordered table-striped" id="tablaRoles" width="100%" cellspacing="0">
+                    <table class="table table-bordered table-striped" id="tablaUsuarios" width="100%" cellspacing="0">
                         <thead class="thead-light">
                             <tr>
                                 <th>Email</th>
                                 <th>PhoneNumber</th>
                                 <th>Cédula</th>
+                                <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -35,8 +37,8 @@
                                     <td>@Html.DisplayFor(m => item.PhoneNumber)</td>
                                     <td>@Html.DisplayFor(m => item.UserName)</td>
                                     <td>
-                                        <a class="btn btn-sm btn-primary" asp-controller="Users" asp-action="Editar" asp-route-id="@item.Id">Editar</a>
-                                        <form asp-action="Borrar" asp-route-id="@item.Id" class="d-inline-block" method="post">
+                                        <a class="btn btn-sm btn-primary" asp-controller="Users" asp-action="Edit" asp-route-id="@item.Id">Editar</a>
+                                        <form asp-action="Delete" asp-route-id="@item.Id" class="d-inline-block" method="post">
                                             <button type="submit" onclick="return confirm('¿Está seguro de borrar este registro?')" class="btn btn-sm btn-danger">Borrar</button>
                                         </form>
                                     </td>
@@ -54,7 +56,6 @@
     </div>
 </div>
 
-
 @section Scripts
 {
     @{
@@ -63,12 +64,12 @@
     <script>
         $(document).ready(function () {
             //Llamar a datatable
-            $('#tablaRoles').DataTable({
+            $('#tablaUsuarios').DataTable({
                 language: {
                     "decimal": "",
                     "emptyTable": "No hay información",
                     "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
-                    "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+                    "infoEmpty": "Mostrando 0 a 0 de 0 Entradas",
                     "infoFiltered": "(Filtrado de _MAX_ total entradas)",
                     "infoPostFix": "",
                     "thousands": ",",
@@ -79,7 +80,7 @@
                     "zeroRecords": "Sin resultados encontrados",
                     "paginate": {
                         "first": "Primero",
-                        "last": "Ultimo",
+                        "last": "Último",
                         "next": "Siguiente",
                         "previous": "Anterior"
                     }

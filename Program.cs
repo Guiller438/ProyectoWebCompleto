@@ -1,3 +1,4 @@
+using IW7PP.Controllers.ComponentsControllers;
 using IW7PP.Data;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
@@ -12,7 +13,16 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkSto
 builder.Services.AddControllersWithViews();
 
 
-    
+builder.Services.AddScoped<FeetController>();
+builder.Services.AddScoped<ProsthesisController>();
+builder.Services.AddScoped<KneeArticulateController>();
+builder.Services.AddScoped<LinerController>();
+builder.Services.AddScoped<SocketController>();
+builder.Services.AddScoped<TubesController>();
+builder.Services.AddScoped<UnionSocketsController>();
+
+
+
 builder.Services.AddDbContext<ApplicationDbContext>(opciones =>
 
     opciones.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))

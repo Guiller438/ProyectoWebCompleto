@@ -1,0 +1,96 @@
+﻿@model IW7PP.Models.ProsthesisM.Prosthesis
+
+@{
+    Layout = null; // Quitamos el layout para evitar conflictos
+    ViewData["Title"] = "Crear Prótesis";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/site.css" rel="stylesheet" /> <!-- Asegúrate de ajustar la ruta según tu estructura de carpetas -->
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Crear Prótesis</h1>
+        <hr />
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form asp-action="CreateProsthesis">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <!-- SocketId -->
+                    <div class="form-group">
+                        <label asp-for="SocketId" class="control-label"></label>
+                        <select asp-for="SocketId" class="form-control" asp-items="ViewBag.SocketId"></select>
+                    </div>
+
+                    <!-- LinerId -->
+                    <div class="form-group">
+                        <label asp-for="LinerId" class="control-label"></label>
+                        <select asp-for="LinerId" class="form-control" asp-items="ViewBag.LinerId"></select>
+                    </div>
+
+                    <!-- TubeId -->
+                    <div class="form-group">
+                        <label asp-for="TubeId" class="control-label"></label>
+                        <select asp-for="TubeId" class="form-control" asp-items="ViewBag.TubeId"></select>
+                    </div>
+
+                    <!-- FootId -->
+                    <div class="form-group">
+                        <label asp-for="FootId" class="control-label"></label>
+                        <select asp-for="FootId" class="form-control" asp-items="ViewBag.FootId"></select>
+                    </div>
+
+                    <!-- UnionSocketId -->
+                    <div class="form-group">
+                        <label asp-for="UnionSocketId" class="control-label"></label>
+                        <select asp-for="UnionSocketId" class="form-control" asp-items="ViewBag.UnionSocketId"></select>
+                    </div>
+
+                    <!-- KneeArticulateId -->
+                    <div class="form-group">
+                        <label asp-for="KneeArticulateId" class="control-label"></label>
+                        <select asp-for="KneeArticulateId" class="form-control" asp-items="ViewBag.KneeArticulateId"></select>
+                    </div>
+
+                    <!-- UpperLimbAmputationsiD -->
+                    <div class="form-group">
+                        <label asp-for="UpperLimbAmputationsiD" class="control-label"></label>
+                        <select asp-for="UpperLimbAmputationsiD" class="form-control" asp-items="ViewBag.UpperLimbAmputationsiD"></select>
+                    </div>
+
+                    <!-- LowerLimbAmputationsiD -->
+                    <div class="form-group">
+                        <label asp-for="LowerLimbAmputationsiD" class="control-label"></label>
+                        <select asp-for="LowerLimbAmputationsiD" class="form-control" asp-items="ViewBag.LowerLimbAmputationsiD"></select>
+                    </div>
+
+                    <div class="alert alert-info text-center" role="alert">
+                        La durabilidad se mostrará en la tabla general después de crear la prótesis.
+                    </div>
+
+                    <div class="form-group text-center">
+                        <input type="submit" value="Crear" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - IW7PP
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script> <!-- Asegúrate de ajustar la ruta según tu estructura de carpetas -->
+</body>
+</html>

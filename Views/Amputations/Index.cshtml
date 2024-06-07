@@ -1,27 +1,24 @@
 ﻿@model IEnumerable<IW7PP.Models.Amputations.UpperLimbAmputation>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Administración de Amputaciones de Nivel Superior";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
-<h1 class="text-center my-4">Administración de Amputaciones de nivel superior</h1>
+<h1 class="text-center my-4">Administración de Amputaciones de Nivel Superior</h1>
 
 <div class="container mb-5 pb-5">
-    <div class="row mb-3">
-        <div class="row mb-3">
-            <div class="col-sm-3 offset-sm-9">
-                <a asp-action="CreateUap" asp-controller="Amputations" class="btn btn-primary w-100">Crear Nueva amputación superior</a>
-            </div>
-            <div class="col-sm-3">
-                <a asp-action="LowerLimbAmputations" asp-controller="Amputations" class="btn btn-secondary w-100">Miembros inferiores</a>
-            </div>
+    <div class="row mb-3 justify-content-center">
+        <div class="col-sm-3 mb-3">
+            <a asp-action="CreateUap" asp-controller="Amputations" class="btn btn-primary w-100">Crear Nueva Amputación Superior</a>
+        </div>
+        <div class="col-sm-3 mb-3">
+            <a asp-action="LowerLimbAmputations" asp-controller="Amputations" class="btn btn-primary w-100">Miembros Inferiores</a>
         </div>
     </div>
     <div class="card shadow-sm">
         <div class="card-header bg-primary text-white">
-            <h3 class="mb-0">Lista de tipo de amputaciones</h3>
+            <h3 class="mb-0">Lista de Tipo de Amputaciones</h3>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -32,6 +29,7 @@
                             <tr>
                                 <th>Id</th>
                                 <th>Nombre</th>
+                                <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -60,7 +58,6 @@
     </div>
 </div>
 
-
 @section Scripts
 {
     @{
@@ -68,13 +65,12 @@
     }
     <script>
         $(document).ready(function () {
-            //Llamar a datatable
             $('#tipodeamputaciones').DataTable({
                 language: {
                     "decimal": "",
                     "emptyTable": "No hay información",
                     "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
-                    "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+                    "infoEmpty": "Mostrando 0 a 0 de 0 Entradas",
                     "infoFiltered": "(Filtrado de _MAX_ total entradas)",
                     "infoPostFix": "",
                     "thousands": ",",
@@ -85,7 +81,7 @@
                     "zeroRecords": "Sin resultados encontrados",
                     "paginate": {
                         "first": "Primero",
-                        "last": "Ultimo",
+                        "last": "Último",
                         "next": "Siguiente",
                         "previous": "Anterior"
                     }

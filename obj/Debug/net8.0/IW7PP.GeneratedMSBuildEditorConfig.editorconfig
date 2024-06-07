@@ -54,12 +54,68 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1wdXRhdGlvbnNcTG93ZXJMaW1iQW1wdXRhdGlvbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Feet/CreateFeet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVldFxDcmVhdGVGZWV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Feet/EditFeet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVldFxFZGl0RmVldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/guill/Desktop/IW7/IW7PP/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/guill/Desktop/IW7/IW7PP/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/KneeArticulate/CreateKnee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS25lZUFydGljdWxhdGVcQ3JlYXRlS25lZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/KneeArticulate/EditKnee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS25lZUFydGljdWxhdGVcRWRpdEtuZWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Liner/CreateLiner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGluZXJcQ3JlYXRlTGluZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Liner/EditLiner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGluZXJcRWRpdExpbmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Prosthesis/CreateProsthesis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvc3RoZXNpc1xDcmVhdGVQcm9zdGhlc2lzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Prosthesis/FeetView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvc3RoZXNpc1xGZWV0Vmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Prosthesis/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvc3RoZXNpc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Prosthesis/KneeArticulateView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvc3RoZXNpc1xLbmVlQXJ0aWN1bGF0ZVZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Prosthesis/LinerView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvc3RoZXNpc1xMaW5lclZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Prosthesis/SocketView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvc3RoZXNpc1xTb2NrZXRWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Prosthesis/TubesView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvc3RoZXNpc1xUdWJlc1ZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Prosthesis/UnionSocketsView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvc3RoZXNpc1xVbmlvblNvY2tldHNWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/guill/Desktop/IW7/IW7PP/Views/Role/Crear.cshtml]
@@ -80,6 +136,30 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/guill/Desktop/IW7/IW7PP/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Socket/CreateSocket.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29ja2V0XENyZWF0ZVNvY2tldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Socket/EditSocket.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29ja2V0XEVkaXRTb2NrZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Tubes/CreateTube.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHViZXNcQ3JlYXRlVHViZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/Tubes/EditTube.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHViZXNcRWRpdFR1YmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/UnionSockets/CreateUnionSocket.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pb25Tb2NrZXRzXENyZWF0ZVVuaW9uU29ja2V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/guill/Desktop/IW7/IW7PP/Views/UnionSockets/EditUnionSocket.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pb25Tb2NrZXRzXEVkaXRVbmlvblNvY2tldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/guill/Desktop/IW7/IW7PP/Views/Users/Editar.cshtml]

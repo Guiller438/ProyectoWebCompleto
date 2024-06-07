@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Migrations\\20240603235010_AddandSeedDataForAmputationsModelsProsthesisModelsandClienteModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240603235010_AddandSeedDataForAmputationsModelsProsthesisModelsandClienteModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\views\\prosthesis\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\prosthesis\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\views\\feet\\editfeet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\feet\\editfeet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\controllers\\componentscontrollers\\feetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:controllers\\componentscontrollers\\feetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\controllers\\componentscontrollers\\prosthesiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:controllers\\componentscontrollers\\prosthesiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\migrations\\20240603235010_addandseeddataforamputationsmodelsprosthesismodelsandclientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:migrations\\20240603235010_addandseeddataforamputationsmodelsprosthesismodelsandclientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\controllers\\componentscontrollers\\kneearticulatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:controllers\\componentscontrollers\\kneearticulatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\models\\prosthesism\\foot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,6 +59,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T19:41:18.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Prosthesis\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Prosthesis\\Index.cshtml",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Prosthesis\\Index.cshtml",
+              "RelativeToolTip": "Views\\Prosthesis\\Index.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T19:40:45.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditFeet.cshtml",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Feet\\EditFeet.cshtml",
+              "RelativeDocumentMoniker": "Views\\Feet\\EditFeet.cshtml",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Feet\\EditFeet.cshtml",
+              "RelativeToolTip": "Views\\Feet\\EditFeet.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T19:39:52.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FeetController.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Controllers\\ComponentsControllers\\FeetController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ComponentsControllers\\FeetController.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Controllers\\ComponentsControllers\\FeetController.cs",
+              "RelativeToolTip": "Controllers\\ComponentsControllers\\FeetController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T19:39:43.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProsthesisController.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Controllers\\ComponentsControllers\\ProsthesisController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ComponentsControllers\\ProsthesisController.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Controllers\\ComponentsControllers\\ProsthesisController.cs",
+              "RelativeToolTip": "Controllers\\ComponentsControllers\\ProsthesisController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T19:37:06.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "20240603235010_AddandSeedDataForAmputationsModelsProsthesisModelsandClienteModel.cs",
               "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Migrations\\20240603235010_AddandSeedDataForAmputationsModelsProsthesisModelsandClienteModel.cs",
               "RelativeDocumentMoniker": "Migrations\\20240603235010_AddandSeedDataForAmputationsModelsProsthesisModelsandClienteModel.cs",
@@ -62,98 +130,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T23:48:34.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "KneeArticulateController.cs",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Controllers\\ComponentsControllers\\KneeArticulateController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ComponentsControllers\\KneeArticulateController.cs",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Controllers\\ComponentsControllers\\KneeArticulateController.cs",
-              "RelativeToolTip": "Controllers\\ComponentsControllers\\KneeArticulateController.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T23:46:48.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Foot.cs",
               "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Models\\ProsthesisM\\Foot.cs",
               "RelativeDocumentMoniker": "Models\\ProsthesisM\\Foot.cs",
               "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Models\\ProsthesisM\\Foot.cs",
               "RelativeToolTip": "Models\\ProsthesisM\\Foot.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T23:46:22.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T23:46:22.057Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Liner.cs",
               "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Models\\ProsthesisM\\Liner.cs",
               "RelativeDocumentMoniker": "Models\\ProsthesisM\\Liner.cs",
               "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Models\\ProsthesisM\\Liner.cs",
               "RelativeToolTip": "Models\\ProsthesisM\\Liner.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T23:46:18.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T23:46:18.038Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Prosthesis.cs",
               "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Models\\ProsthesisM\\Prosthesis.cs",
               "RelativeDocumentMoniker": "Models\\ProsthesisM\\Prosthesis.cs",
               "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Models\\ProsthesisM\\Prosthesis.cs",
               "RelativeToolTip": "Models\\ProsthesisM\\Prosthesis.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T23:46:10.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T23:46:10.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T20:33:26.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T20:33:26.005Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T14:36:49.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Users\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Users\\Index.cshtml",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP\\Views\\Users\\Index.cshtml",
-              "RelativeToolTip": "Views\\Users\\Index.cshtml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-01T14:25:49.003Z"
+              "WhenOpened": "2024-06-01T14:36:49.808Z"
             }
           ]
         }
