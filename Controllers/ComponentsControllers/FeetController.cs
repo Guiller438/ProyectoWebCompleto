@@ -33,7 +33,7 @@ namespace IW7PP.Controllers.ComponentsControllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(foot);
+                _context.Feet.Add(foot);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("FeetView", "Prosthesis");
             }

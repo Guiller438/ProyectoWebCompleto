@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Panel de Administración";
+    var username = User.Identity.Name;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Panel de Administración</h1>
+        <hr />
+
+        <div class="row">
+            <!-- Gestión de Clientes -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-header bg-primary text-white">
+                        Clientes
+                    </div>
+                    <div class="card-body">
+                        <p>Gestiona los clientes del sistema.</p>
+                        <a href="@Url.Action("Index", "Cliente")" class="btn btn-primary btn-block">Ver Clientes</a>
+                        <a href="@Url.Action("CreateCliente", "Cliente")" class="btn btn-success btn-block">Crear Cliente</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gestión de Prótesis -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-header bg-success text-white">
+                        Prótesis
+                    </div>
+                    <div class="card-body">
+                        <p>Gestiona las prótesis disponibles.</p>
+                        <a href="@Url.Action("Index", "Prosthesis")" class="btn btn-primary btn-block">Ver Prótesis</a>
+                        <a href="@Url.Action("Index", "Protesista")" class="btn btn-success btn-block">Crear Prótesis</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gestión de Componentes -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-header bg-warning text-white">
+                        Componentes
+                    </div>
+                    <div class="card-body">
+                        <p>Gestiona los componentes del sistema.</p>
+                        <a href="@Url.Action("Index", "Prosthesis")" class="btn btn-success btn-block">Crear Componente</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visualización de Estadísticas -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-header bg-info text-white">
+                        Estadísticas
+                    </div>
+                    <div class="card-body">
+                        <p>Visualiza estadísticas y reportes del sistema.</p>
+                        <a href="@Url.Action("ComponentUsage", "Components")" class="btn btn-primary btn-block">Ver Estadísticas</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gestión de Usuarios -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-header bg-dark text-white">
+                        Usuarios
+                    </div>
+                    <div class="card-body">
+                        <p>Gestiona los usuarios del sistema.</p>
+                        <a href="@Url.Action("Index", "Users")" class="btn btn-primary btn-block">Ver Usuarios</a>
+                        <a href="@Url.Action("CreateUser", "Users")" class="btn btn-success btn-block">Crear Usuario</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

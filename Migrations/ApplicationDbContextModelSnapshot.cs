@@ -39,67 +39,67 @@ namespace IW7PP.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("5c237fc7-25e6-4f4e-8881-dd80131c6169"),
+                            Id = new Guid("dd6be866-f7c8-4263-989d-e782279dd735"),
                             AmputationName = "Below Knee"
                         },
                         new
                         {
-                            Id = new Guid("eb2fdb82-7434-4e4d-bdca-c53c66ff18d9"),
+                            Id = new Guid("f7e70289-5acc-4b1d-adf9-733880989672"),
                             AmputationName = "Above Knee"
                         },
                         new
                         {
-                            Id = new Guid("03f6120a-5fe8-434f-83e5-82e50a4ce438"),
+                            Id = new Guid("68e8a675-4ac6-46bb-a156-cc082f7b9897"),
                             AmputationName = "ToePartial"
                         },
                         new
                         {
-                            Id = new Guid("5975536c-9837-44b5-bdaf-24edee8fd7fa"),
+                            Id = new Guid("e4b8befd-baf4-4c29-aa87-ca686bf8ab9f"),
                             AmputationName = "ToeComplete"
                         },
                         new
                         {
-                            Id = new Guid("1a506915-7368-4947-a28d-97228f344662"),
+                            Id = new Guid("82b303fa-9d07-45fa-bd36-e33a6581323b"),
                             AmputationName = "FootPartial"
                         },
                         new
                         {
-                            Id = new Guid("e056bf8b-b140-419e-b921-e6d5c0b7ebf2"),
+                            Id = new Guid("a7ad1692-8f60-4f42-91fb-b449f16f9235"),
                             AmputationName = "Lisfranc"
                         },
                         new
                         {
-                            Id = new Guid("9d18904a-3cd0-4701-8555-08c015874463"),
+                            Id = new Guid("62957a97-0876-4014-b174-441b03ff5148"),
                             AmputationName = "Chopart"
                         },
                         new
                         {
-                            Id = new Guid("704d785e-d24c-4832-9697-ade07716289a"),
+                            Id = new Guid("dd32fe50-8ae0-4d03-b144-7eba81822e3b"),
                             AmputationName = "AnkleDisarticulation"
                         },
                         new
                         {
-                            Id = new Guid("e4f15b72-d015-48e9-ac59-3ba806c92993"),
+                            Id = new Guid("adc0f191-b9c4-4a6b-a8a6-8030ba668440"),
                             AmputationName = "Transtibial"
                         },
                         new
                         {
-                            Id = new Guid("96b8e4c0-c19f-45d6-9040-26bc4ad5b545"),
+                            Id = new Guid("def68cba-766a-411f-948d-0a76f8206a5e"),
                             AmputationName = "KneeDisarticulation"
                         },
                         new
                         {
-                            Id = new Guid("96d2bf06-e884-4df4-9a53-a8eddee5694f"),
+                            Id = new Guid("97d43185-42c9-4b80-b42e-3907e4d0c987"),
                             AmputationName = "Transfemoral"
                         },
                         new
                         {
-                            Id = new Guid("e396ded0-1035-4b56-9782-d943a0341fd5"),
+                            Id = new Guid("b0531577-9314-4b5b-a890-a5944ae0cd3d"),
                             AmputationName = "HipDisarticulation"
                         },
                         new
                         {
-                            Id = new Guid("37fe1f4e-058b-449a-a321-0112ad782c3d"),
+                            Id = new Guid("41d0e917-dd84-4449-8aae-40e45f5c5539"),
                             AmputationName = "Hemipelvectomy"
                         });
                 });
@@ -121,69 +121,72 @@ namespace IW7PP.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("cf4275bf-76fb-4183-a55e-ffbedca1398b"),
+                            Id = new Guid("279d8240-373f-4d66-9918-b56dd29b85bd"),
                             AmputationName = "Finger Partial"
                         },
                         new
                         {
-                            Id = new Guid("6674355c-74c7-431a-b255-41a6e15d3f1f"),
+                            Id = new Guid("342796b6-a322-46ec-b10c-0fad2a4d9c9a"),
                             AmputationName = "Finger Complete"
                         },
                         new
                         {
-                            Id = new Guid("0d371bc7-cfdc-4a25-8a3f-831b521236ac"),
+                            Id = new Guid("331840bf-b15c-4338-a15b-5b5984b228cd"),
                             AmputationName = "Hand Partial"
                         },
                         new
                         {
-                            Id = new Guid("191af8c8-378f-48c7-a2b0-d4eab05fc649"),
+                            Id = new Guid("0dabe2c7-a3e3-4127-ba74-da340d797f2c"),
                             AmputationName = "Wrist Disarticulation"
                         },
                         new
                         {
-                            Id = new Guid("8fe2e47b-68c0-48cd-a5e5-36e54e4864c2"),
+                            Id = new Guid("6715876c-fd60-437c-a604-b1546547ae2b"),
                             AmputationName = "Transradial"
                         },
                         new
                         {
-                            Id = new Guid("ec7c2d2b-849e-4f30-a11a-166f38d1d757"),
+                            Id = new Guid("c11e3262-48c9-4f48-b583-863da008c17c"),
                             AmputationName = "Elbow Disarticulation"
                         });
                 });
 
-            modelBuilder.Entity("IW7PP.Models.Cliente.Cliente", b =>
+            modelBuilder.Entity("IW7PP.Models.Cliente.ClientesProtesicos", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<int>("LifeStyleId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
 
-                    b.Property<int>("ProsthesisId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProtesisId")
+                    b.Property<int?>("ProtesisId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("LifeStyleId");
 
-                    b.HasIndex("ProsthesisId");
+                    b.HasIndex("ProtesisId");
 
-                    b.ToTable("Clientes");
+                    b.ToTable("ClientesProtesicos");
                 });
 
             modelBuilder.Entity("IW7PP.Models.Cliente.LifeStyle", b =>
@@ -247,7 +250,6 @@ namespace IW7PP.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<double>("Durability")
-                        .HasMaxLength(2)
                         .HasColumnType("float");
 
                     b.Property<string>("Name")
@@ -311,7 +313,6 @@ namespace IW7PP.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<double>("Durability")
-                        .HasMaxLength(2)
                         .HasColumnType("float");
 
                     b.Property<string>("Name")
@@ -375,7 +376,6 @@ namespace IW7PP.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<double>("Durability")
-                        .HasMaxLength(2)
                         .HasColumnType("float");
 
                     b.Property<string>("Name")
@@ -498,7 +498,6 @@ namespace IW7PP.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<double>("Durability")
-                        .HasMaxLength(2)
                         .HasColumnType("float");
 
                     b.HasKey("Id");
@@ -552,7 +551,6 @@ namespace IW7PP.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<double>("Durability")
-                        .HasMaxLength(2)
                         .HasColumnType("float");
 
                     b.Property<string>("Name")
@@ -616,7 +614,6 @@ namespace IW7PP.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<double>("Durability")
-                        .HasMaxLength(2)
                         .HasColumnType("float");
 
                     b.Property<string>("Name")
@@ -888,7 +885,7 @@ namespace IW7PP.Migrations
                     b.HasDiscriminator().HasValue("UserModel");
                 });
 
-            modelBuilder.Entity("IW7PP.Models.Cliente.Cliente", b =>
+            modelBuilder.Entity("IW7PP.Models.Cliente.ClientesProtesicos", b =>
                 {
                     b.HasOne("IW7PP.Models.Cliente.LifeStyle", "LifeStyle")
                         .WithMany()
@@ -898,9 +895,7 @@ namespace IW7PP.Migrations
 
                     b.HasOne("IW7PP.Models.ProsthesisM.Prosthesis", "Prosthesis")
                         .WithMany()
-                        .HasForeignKey("ProsthesisId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ProtesisId");
 
                     b.Navigation("LifeStyle");
 

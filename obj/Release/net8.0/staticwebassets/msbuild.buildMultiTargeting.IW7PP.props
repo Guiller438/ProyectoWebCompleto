@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\IW7PP.props" />
+</Project>

@@ -4,6 +4,7 @@ using IW7PP.Models;
 using IW7PP.ViewModel;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
 using System.Text.RegularExpressions;
@@ -30,11 +31,71 @@ namespace IW7PP.Controllers
             var users = _context.Users.ToList();
             return View(users);
         }
-
         [HttpGet]
         public async Task<IActionResult> Registro()
         {
-            if(!await _roleManager.RoleExistsAsync("Administrador"))
+            await EnsureRolesExist();
+
+            var roles = _roleManager.Roles.Select(role => new SelectListItem
+            {
+                Value = role.Id.ToString(),
+                Text = role.Name
+            }).ToList();
+
+            RegistroVM registroVM = new RegistroVM
+            {
+                Roles = roles
+            };
+
+            return View(registroVM);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Registro(RegistroVM usModel)
+        {
+            var usuario = new UserModel
+            {
+                Name = usModel.Name,
+                LastName = usModel.LastName,
+                UserName = usModel.UserName,
+                Email = usModel.Email,
+                PhoneNumber = usModel.PhoneNumber
+            };
+
+            var resultado = await _userManager.CreateAsync(usuario, usModel.Password);
+
+            if (resultado.Succeeded)
+            {
+                var role = await _roleManager.FindByIdAsync(usModel.SelectedRole.ToString());
+                if (role != null)
+                {
+                    await _userManager.AddToRoleAsync(usuario, role.Name);
+                }
+
+                return RedirectToAction("Login", "Index");
+            }
+            else
+            {
+                foreach (var error in resultado.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+            }
+
+
+            // Recargar los roles en caso de error para que se muestren correctamente en la vista
+            usModel.Roles = _roleManager.Roles.Select(role => new SelectListItem
+            {
+                Value = role.Id.ToString(),
+                Text = role.Name
+            }).ToList();
+
+            return View(usModel);
+        }
+
+        private async Task EnsureRolesExist()
+        {
+            if (!await _roleManager.RoleExistsAsync("Administrador"))
             {
                 await _roleManager.CreateAsync(new IdentityRole("Administrador"));
             }
@@ -48,53 +109,6 @@ namespace IW7PP.Controllers
             {
                 await _roleManager.CreateAsync(new IdentityRole("Cliente"));
             }
-
-
-            RegistroVM registroVM = new RegistroVM();
-            return View(registroVM);
-        }
-
-
-        [HttpPost]
-        public async Task<IActionResult> Registro(RegistroVM usModel)
-        {
-            if (ModelState.IsValid)
-            {
-                if (usModel.Password.Equals(usModel.ConfirmPassword))
-                {
-                    var usuario = new UserModel
-                    {
-                        Name = usModel.Name,
-                        LastName = usModel.LastName,
-                        UserName = usModel.UserName,
-                        Email = usModel.Email,
-                        PhoneNumber = usModel.PhoneNumber
-                    };
-
-                    var resultado = await _userManager.CreateAsync(usuario, usModel.Password);
-
-
-                    if (resultado.Succeeded)
-                    {
-                        await _userManager.AddToRoleAsync(usuario, "Cliente");
-
-                        await _signInManager.SignInAsync(usuario, isPersistent: false);
-                        return RedirectToAction("Index", "Home");
-                    }
-                    else
-                    {
-                        ViewData["Mensaje"] = "No se logró crear el usuario";
-                    }
-                }
-                else
-                {
-                    ViewData["Mensaje"] = "Las contraseñas no coinciden";
-                    return View();
-                }
-
-            }
-
-            return View();
         }
         [HttpGet]
         public IActionResult Login()
@@ -107,21 +121,33 @@ namespace IW7PP.Controllers
         {
             if (ModelState.IsValid)
             {
-
-                var resultado = await _signInManager.PasswordSignInAsync(userModel.UserName, userModel.Password, isPersistent:false, lockoutOnFailure: false);
+                var resultado = await _signInManager.PasswordSignInAsync(userModel.UserName, userModel.Password, isPersistent: false, lockoutOnFailure: false);
 
                 if (resultado.Succeeded)
                 {
-                    return RedirectToAction("Index", "Home");
+                    var user = await _userManager.FindByNameAsync(userModel.UserName);
+                    var roles = await _userManager.GetRolesAsync(user);
+
+                    if (roles.Contains("Administrador"))
+                    {
+                        return RedirectToAction("Admin", "Panel");
+                    }
+                    else if (roles.Contains("Protesista"))
+                    {
+                        return RedirectToAction("Protesista", "Panel");
+                    }
+                    else
+                    {
+                        return RedirectToAction("Login", "Users");
+                    }
                 }
                 else
                 {
                     ViewData["Mensaje"] = "No se logró iniciar sesión";
                     return View(userModel);
                 }
-
             }
-            return View();
+            return View(userModel);
         }
 
         [HttpPost]
@@ -129,7 +155,7 @@ namespace IW7PP.Controllers
         public async Task<IActionResult> LogOut()
         {
             await _signInManager.SignOutAsync();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login", "Users");
         }
 
 
@@ -187,5 +213,68 @@ namespace IW7PP.Controllers
         }
 
 
+        [HttpGet]
+
+        public async Task<IActionResult> CreateUser()
+        {
+            await EnsureRolesExist();
+
+            var roles = _roleManager.Roles.Select(role => new SelectListItem
+            {
+                Value = role.Id.ToString(),
+                Text = role.Name
+            }).ToList();
+
+            RegistroVM registroVM = new RegistroVM
+            {
+                Roles = roles
+            };
+
+            return View(registroVM);
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> CreateUser(RegistroVM usModel)
+        {
+            var usuario = new UserModel
+            {
+                Name = usModel.Name,
+                LastName = usModel.LastName,
+                UserName = usModel.UserName,
+                Email = usModel.Email,
+                PhoneNumber = usModel.PhoneNumber
+            };
+
+            var resultado = await _userManager.CreateAsync(usuario, usModel.Password);
+
+            if (resultado.Succeeded)
+            {
+                var role = await _roleManager.FindByIdAsync(usModel.SelectedRole.ToString());
+                if (role != null)
+                {
+                    await _userManager.AddToRoleAsync(usuario, role.Name);
+                }
+
+                return RedirectToAction("Login", "Users");
+            }
+            else
+            {
+                foreach (var error in resultado.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+            }
+
+
+            // Recargar los roles en caso de error para que se muestren correctamente en la vista
+            usModel.Roles = _roleManager.Roles.Select(role => new SelectListItem
+            {
+                Value = role.Id.ToString(),
+                Text = role.Name
+            }).ToList();
+
+            return View(usModel);
+        }
     }
 }

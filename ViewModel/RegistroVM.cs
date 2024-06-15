@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System.ComponentModel.DataAnnotations;
 
 namespace IW7PP.ViewModel
 {
@@ -25,5 +26,10 @@ namespace IW7PP.ViewModel
         [Required]
         [StringLength(10, MinimumLength = 10)]
         public string PhoneNumber {  get; set; }
+
+        [Required(ErrorMessage = "El rol es obligatorio")]
+        public string SelectedRole { get; set; }
+
+        public List<SelectListItem> Roles { get; set; }
     }
 }

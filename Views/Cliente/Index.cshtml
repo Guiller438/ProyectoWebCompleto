@@ -1,0 +1,104 @@
+﻿@model IEnumerable<IW7PP.Models.Cliente.ClientesProtesicos>
+
+@{
+    ViewData["Title"] = "Administración de clientes";
+}
+
+<h1 class="text-center my-4">Administración de clientes</h1>
+
+<div class="container mb-5 pb-5">
+    <div class="row mb-3">
+        <div class="col-sm-3 offset-sm-9">
+            <a asp-action="CreateCliente" asp-controller="Cliente" class="btn btn-primary w-100">Crear Nueva cliente</a>
+        </div>
+    </div>
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">Lista de prótesis</h3>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                @if (Model.Count() > 0)
+                {
+                    <table class="table table-bordered table-striped" id="tablaProtesis" width="100%" cellspacing="0">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Last Name</th>
+                                <th>Phone Number</th>
+                                <th>Prosthesis Id</th>
+                                <th>LifeStyle</th>
+                                <th>Acciones</th>DeleteClient
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(m => item.Id)</td>
+                                    <td>@Html.DisplayFor(m => item.Name)</td>
+                                    <td>@Html.DisplayFor(m => item.LastName)</td>
+                                    <td>@Html.DisplayFor(m => item.PhoneNumber)</td>
+                                    <td>@Html.DisplayFor(m => item.Prosthesis.Id)</td>
+                                    <td>@Html.DisplayFor(m => item.LifeStyle.Name)</td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Acciones">
+                                            <a class="btn btn-sm btn-primary" href="@Url.Action("EditarCliente", "Cliente", new { id = item.Id })">Editar</a>
+                                            <form asp-action="DeleteCliente" asp-route-id="@item.Id" class="d-inline-block" method="post">
+                                                <button type="submit" onclick="return confirm('¿Está seguro de borrar este registro?')" class="btn btn-sm btn-danger">Borrar</button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <p class="text-center">No hay registros</p>
+                }
+            </div>
+            <!-- Adding buttons below the table -->
+            <div class="mt-4 row">
+                <div class="col">
+                    <a asp-action="LifeStyleView" asp-controller="Cliente" class="btn btn-secondary w-100 mx-2">Life styles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        $(document).ready(function () {
+            $('#tablaProtesis').DataTable({
+                language: {
+                    "decimal": "",
+                    "emptyTable": "No hay información",
+                    "info": "Mostrando _START_ a _END_ de _TOTAL_ entradas",
+                    "infoEmpty": "Mostrando 0 a 0 de 0 entradas",
+                    "infoFiltered": "(filtrado de _MAX_ entradas totales)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Mostrar _MENU_ entradas",
+                    "loadingRecords": "Cargando...",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "No se encontraron registros coincidentes",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Último",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    }
+                }
+            });
+        });
+    </script>
+}

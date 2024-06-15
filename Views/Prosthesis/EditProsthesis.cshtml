@@ -1,0 +1,93 @@
+﻿@model IW7PP.ViewModel.ProsthesisVM
+
+@{
+    ViewData["Title"] = "Edit Prosthesis";
+}
+
+<h2>Edit Prosthesis</h2>
+
+<h4>Prosthesis</h4>
+<hr />
+
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="EditProsthesis">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+
+            <div class="form-group">
+                <label asp-for="SocketId" class="control-label"></label>
+                <select asp-for="SocketId" class="form-control" asp-items="ViewBag.SocketId"></select>
+                <span asp-validation-for="SocketId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LinerId" class="control-label"></label>
+                <select asp-for="LinerId" class="form-control" asp-items="ViewBag.LinerId"></select>
+                <span asp-validation-for="LinerId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TubeId" class="control-label"></label>
+                <select asp-for="TubeId" class="form-control" asp-items="ViewBag.TubeId"></select>
+                <span asp-validation-for="TubeId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="FootId" class="control-label"></label>
+                <select asp-for="FootId" class="form-control" asp-items="ViewBag.FootId"></select>
+                <span asp-validation-for="FootId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="UnionSocketId" class="control-label"></label>
+                <select asp-for="UnionSocketId" class="form-control" asp-items="ViewBag.UnionSocketId"></select>
+                <span asp-validation-for="UnionSocketId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="KneeArticulateId" class="control-label"></label>
+                <select asp-for="KneeArticulateId" class="form-control" asp-items="ViewBag.KneeArticulateId"></select>
+                <span asp-validation-for="KneeArticulateId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="UpperLimbAmputationsiD" class="control-label"></label>
+                <select asp-for="UpperLimbAmputationsiD" class="form-control" asp-items="ViewBag.UpperLimbAmputationsiD"></select>
+                <span asp-validation-for="UpperLimbAmputationsiD" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LowerLimbAmputationsiD" class="control-label"></label>
+                <select asp-for="LowerLimbAmputationsiD" class="form-control" asp-items="ViewBag.LowerLimbAmputationsiD"></select>
+                <span asp-validation-for="LowerLimbAmputationsiD" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Durability" class="control-label"></label>
+                <input asp-for="Durability" class="form-control" readonly />
+                <span asp-validation-for="Durability" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="AverageDurability" class="control-label"></label>
+                <input asp-for="AverageDurability" class="form-control" readonly />
+                <span asp-validation-for="AverageDurability" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

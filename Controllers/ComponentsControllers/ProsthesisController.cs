@@ -1,4 +1,5 @@
 ﻿using IW7PP.Data;
+using IW7PP.Models.Cliente;
 using IW7PP.Models.ProsthesisM;
 using IW7PP.ViewModel;
 using Microsoft.AspNetCore.Mvc;
@@ -11,7 +12,7 @@ namespace IW7PP.Controllers.ComponentsControllers
 {
     public class ProsthesisController : Controller
     {
-        
+
         ApplicationDbContext _context;
         FeetController _feetController;
 
@@ -26,6 +27,7 @@ namespace IW7PP.Controllers.ComponentsControllers
         UnionSocketsController _unionSocketsController;
 
 
+
         public ProsthesisController(ApplicationDbContext context, FeetController feetController, KneeArticulateController kneeArticulateController, LinerController linerController, SocketController socketController, TubesController tubesController, UnionSocketsController unionSocketsController)
         {
             _context = context;
@@ -35,6 +37,7 @@ namespace IW7PP.Controllers.ComponentsControllers
             _socketController = socketController;
             _tubesController = tubesController;
             _unionSocketsController = unionSocketsController;
+
 
         }
 
@@ -138,7 +141,7 @@ namespace IW7PP.Controllers.ComponentsControllers
                     LowerLimbAmputationsiD = prosthesis.LowerLimbAmputationsiD
                 };
 
-                userProsthesis.Durability   = CalculateDurability(userProsthesis);
+                userProsthesis.Durability = CalculateDurability(userProsthesis);
                 userProsthesis.AverageDurability = CalculateAverageDurability(userProsthesis);
 
                 _context.Prostheses.Add(userProsthesis);
@@ -165,7 +168,191 @@ namespace IW7PP.Controllers.ComponentsControllers
 
         }
 
-        private double CalculateDurability(Prosthesis prosthesis)
+
+        [HttpGet]
+        public async Task<IActionResult> EditProsthesis(int id)
+        {
+            var prosthesis = await _context.Prostheses
+                                .Include(p => p.Socket)
+                                .Include(p => p.Liner)
+                                .Include(p => p.Tube)
+                                .Include(p => p.Foot)
+                                .Include(p => p.UnionSocket)
+                                .Include(p => p.RodillaArticulada)
+                                .Include(p => p.UpperLimbAmputations)
+                                .Include(p => p.LowerLimbAmputations)
+                                .FirstOrDefaultAsync(p => p.Id == id);
+
+            if (prosthesis == null)
+            {
+                return NotFound();
+            }
+
+            var viewModel = new ProsthesisVM
+            {
+                Id = prosthesis.Id,
+                SocketId = prosthesis.SocketId,
+                LinerId = prosthesis.LinerId,
+                TubeId = prosthesis.TubeId,
+                FootId = prosthesis.FootId,
+                UnionSocketId = prosthesis.UnionSocketId,
+                KneeArticulateId = prosthesis.KneeArticulateId,
+                UpperLimbAmputationsiD = prosthesis.UpperLimbAmputationsiD,
+                LowerLimbAmputationsiD = prosthesis.LowerLimbAmputationsiD,
+                Durability = prosthesis.Durability,
+                AverageDurability = prosthesis.AverageDurability
+            };
+
+            ViewData["SocketId"] = new SelectList(_context.Sockets, "Id", "Description", prosthesis.SocketId);
+            ViewData["LinerId"] = new SelectList(_context.Liners, "Id", "Name", prosthesis.LinerId);
+            ViewData["TubeId"] = new SelectList(_context.Tubes, "Id", "Name", prosthesis.TubeId);
+            ViewData["FootId"] = new SelectList(_context.Feet, "Id", "Name", prosthesis.FootId);
+            ViewData["UnionSocketId"] = new SelectList(_context.UnionSockets, "Id", "Name", prosthesis.UnionSocketId);
+            ViewData["KneeArticulateId"] = new SelectList(_context.KneeArticulates, "Id", "Name", prosthesis.KneeArticulateId);
+            ViewData["UpperLimbAmputationsiD"] = new SelectList(_context.UpperLimbAmputations, "Id", "AmputationName", prosthesis.UpperLimbAmputationsiD);
+            ViewData["LowerLimbAmputationsiD"] = new SelectList(_context.LowerLimbAmputations, "Id", "AmputationName", prosthesis.LowerLimbAmputationsiD);
+
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditProsthesis(int id, [Bind("Id,SocketId,LinerId,TubeId,FootId,UnionSocketId,KneeArticulateId,UpperLimbAmputationsiD,LowerLimbAmputationsiD,Durability,AverageDurability")] ProsthesisVM prosthesis)
+        {
+            if (id != prosthesis.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    var existingProsthesis = await _context.Prostheses.FindAsync(prosthesis.Id);
+
+                    if (existingProsthesis == null)
+                    {
+                        return NotFound();
+                    }
+
+                    existingProsthesis.SocketId = prosthesis.SocketId;
+                    existingProsthesis.LinerId = prosthesis.LinerId;
+                    existingProsthesis.TubeId = prosthesis.TubeId;
+                    existingProsthesis.FootId = prosthesis.FootId;
+                    existingProsthesis.UnionSocketId = prosthesis.UnionSocketId;
+                    existingProsthesis.KneeArticulateId = prosthesis.KneeArticulateId;
+                    existingProsthesis.UpperLimbAmputationsiD = prosthesis.UpperLimbAmputationsiD;
+                    existingProsthesis.LowerLimbAmputationsiD = prosthesis.LowerLimbAmputationsiD;
+                    existingProsthesis.Durability = CalculateDurability(existingProsthesis);
+                    existingProsthesis.AverageDurability = CalculateAverageDurability(existingProsthesis);
+
+                    _context.Prostheses.Update(existingProsthesis);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!ProsthesisExists(prosthesis.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+
+                return RedirectToAction(nameof(Index));
+            }
+
+            ViewData["SocketId"] = new SelectList(_context.Sockets, "Id", "Description", prosthesis.SocketId);
+            ViewData["LinerId"] = new SelectList(_context.Liners, "Id", "Name", prosthesis.LinerId);
+            ViewData["TubeId"] = new SelectList(_context.Tubes, "Id", "Name", prosthesis.TubeId);
+            ViewData["FootId"] = new SelectList(_context.Feet, "Id", "Name", prosthesis.FootId);
+            ViewData["UnionSocketId"] = new SelectList(_context.UnionSockets, "Id", "Name", prosthesis.UnionSocketId);
+            ViewData["KneeArticulateId"] = new SelectList(_context.KneeArticulates, "Id", "Name", prosthesis.KneeArticulateId);
+            ViewData["UpperLimbAmputationsiD"] = new SelectList(_context.UpperLimbAmputations, "Id", "AmputationName", prosthesis.UpperLimbAmputationsiD);
+            ViewData["LowerLimbAmputationsiD"] = new SelectList(_context.LowerLimbAmputations, "Id", "AmputationName", prosthesis.LowerLimbAmputationsiD);
+
+            return View(prosthesis);
+        }
+
+        private bool ProsthesisExists(int id)
+        {
+            return _context.Prostheses.Any(e => e.Id == id);
+        }
+
+
+        [HttpGet]
+        public async Task<IActionResult> DeleteProsthesis(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var prosthesis = await _context.Prostheses
+                .Include(p => p.Socket)
+                .Include(p => p.Liner)
+                .Include(p => p.Tube)
+                .Include(p => p.Foot)
+                .Include(p => p.UnionSocket)
+                .Include(p => p.RodillaArticulada)
+                .Include(p => p.UpperLimbAmputations)
+                .Include(p => p.LowerLimbAmputations)
+                .FirstOrDefaultAsync(m => m.Id == id);
+
+            if (prosthesis == null)
+            {
+                return NotFound();
+            }
+
+            return View(prosthesis);
+        }
+
+        // Método POST para confirmar la eliminación
+        [HttpPost, ActionName("DeleteProsthesis")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var prosthesis = await _context.Prostheses.FindAsync(id);
+            if (prosthesis != null)
+            {
+                _context.Prostheses.Remove(prosthesis);
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+
+        [HttpGet]
+        public JsonResult GetAllMaterials()
+        {
+            var sockets = _context.Sockets.ToList();
+            var liners = _context.Liners.ToList();
+            var tubes = _context.Tubes.ToList();
+            var knees = _context.KneeArticulates.ToList();
+            var feet = _context.Feet.ToList();
+            var unionSockets = _context.UnionSockets.ToList();
+            var upperLimbAmputations = _context.UpperLimbAmputations.ToList();
+            var lowerLimbAmputations = _context.LowerLimbAmputations.ToList();
+
+            return Json(new
+            {
+                sockets,
+                liners,
+                tubes,
+                knees,
+                feet,
+                unionSockets,
+                upperLimbAmputations,
+                lowerLimbAmputations
+            });
+        }
+
+
+
+        public double CalculateDurability(Prosthesis prosthesis)
         {
             double totalDurability = 0;
 
@@ -203,7 +390,7 @@ namespace IW7PP.Controllers.ComponentsControllers
             return totalDurability;
         }
 
-        private double CalculateAverageDurability(Prosthesis prosthesis)
+        public double CalculateAverageDurability(Prosthesis prosthesis)
         {
             var componentCount = 0;
             double totalDurability = 0;
@@ -252,10 +439,8 @@ namespace IW7PP.Controllers.ComponentsControllers
 
 
 
-
-
     }
 
-
+ 
 
 }

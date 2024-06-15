@@ -1,0 +1,123 @@
+﻿@{
+    ViewData["Title"] = "Cuestionario de Estilo de Vida";
+}
+
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="content">
+        <div class="container">
+            <h2>@ViewData["Title"]</h2>
+            <form id="lifestyleForm" asp-action="AssignLifestyle" method="post">
+                <div class="form-group">
+                    <label for="Question1Response">¿Cuántos días a la semana realiza actividad física moderada (como caminar a paso ligero, nadar, andar en bicicleta) durante al menos 30 minutos?</label>
+                    <select id="Question1Response" class="form-control">
+                        <option value="0">0 días</option>
+                        <option value="5">1-2 días</option>
+                        <option value="10">3-4 días</option>
+                        <option value="15">5 o más días</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Question2Response">¿Cuántos días a la semana realiza ejercicio vigoroso (como correr, entrenamiento de alta intensidad, deportes competitivos) durante al menos 20 minutos?</label>
+                    <select id="Question2Response" class="form-control">
+                        <option value="0">0 días</option>
+                        <option value="5">1-2 días</option>
+                        <option value="10">3-4 días</option>
+                        <option value="15">5 o más días</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Question3Response">¿Suele tomar las escaleras en lugar del ascensor o la escalera mecánica?</label>
+                    <select id="Question3Response" class="form-control">
+                        <option value="3">Siempre</option>
+                        <option value="5">A menudo</option>
+                        <option value="10">A veces</option>
+                        <option value="15">Nunca</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Question4Response">¿Cuántas horas al día pasa sentado (en el trabajo, en la escuela, viendo televisión, usando la computadora)?</label>
+                    <select id="Question4Response" class="form-control">
+                        <option value="15">Menos de 2 horas</option>
+                        <option value="10">2-4 horas</option>
+                        <option value="5">4-6 horas</option>
+                        <option value="0">Más de 6 horas</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Question5Response">¿Participa en algún deporte o actividad física organizada (como un equipo deportivo, clases de fitness, etc.)?</label>
+                    <select id="Question5Response" class="form-control">
+                        <option value="15">Sí, regularmente</option>
+                        <option value="10">Sí, ocasionalmente</option>
+                        <option value="5">No, pero me gustaría</option>
+                        <option value="0">No, nunca</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Question6Response">¿Cuántos pasos da en promedio al día (puede usar un podómetro o una aplicación de conteo de pasos para medir esto)?</label>
+                    <select id="Question6Response" class="form-control">
+                        <option value="15">Menos de 3,000 pasos</option>
+                        <option value="10">3,000-5,999 pasos</option>
+                        <option value="5">6,000-9,999 pasos</option>
+                        <option value="0">Más de 10,000 pasos</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Question7Response">¿Suele realizar ejercicios de fuerza (como levantamiento de pesas, ejercicios de resistencia) durante la semana?</label>
+                    <select id="Question7Response" class="form-control">
+                        <option value="15">Sí, 3 o más veces a la semana</option>
+                        <option value="10">Sí, 1-2 veces a la semana</option>
+                        <option value="5">No, pero me gustaría</option>
+                        <option value="0">No, nunca</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Question8Response">¿Cuánto tiempo dedica a actividades recreativas al aire libre (como caminar, andar en bicicleta, jardinería) en una semana típica?</label>
+                    <select id="Question8Response" class="form-control">
+                        <option value="0">Menos de 1 hora</option>
+                        <option value="5">1-2 horas</option>
+                        <option value="10">2-4 horas</option>
+                        <option value="15">Más de 4 horas</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Question9Response">¿Suele realizar actividades físicas con su familia o amigos (como jugar a juegos de pelota, ir de excursión, etc.)?</label>
+                    <select id="Question9Response" class="form-control">
+                        <option value="15">Sí, regularmente</option>
+                        <option value="10">Sí, ocasionalmente</option>
+                        <option value="5">No, pero me gustaría</option>
+                        <option value="0">No, nunca</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Question10Response">¿Se siente físicamente fatigado o sin energía con frecuencia durante el día?</label>
+                    <select id="Question10Response" class="form-control">
+                        <option value="0">Siempre</option>
+                        <option value="10">A menudo</option>
+                        <option value="5">A veces</option>
+                        <option value="15">Nunca</option>
+                    </select>
+                </div>
+                <input type="hidden" id="Score" name="Score" value="0" />
+                <button type="submit" class="btn btn-primary" onclick="calculateScore()">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    function calculateScore() {
+        var score = 0;
+        score += parseInt(document.getElementById('Question1Response').value);
+        score += parseInt(document.getElementById('Question2Response').value);
+        score += parseInt(document.getElementById('Question3Response').value);
+        score += parseInt(document.getElementById('Question4Response').value);
+        score += parseInt(document.getElementById('Question5Response').value);
+        score += parseInt(document.getElementById('Question6Response').value);
+        score += parseInt(document.getElementById('Question7Response').value);
+        score += parseInt(document.getElementById('Question8Response').value);
+        score += parseInt(document.getElementById('Question9Response').value);
+        score += parseInt(document.getElementById('Question10Response').value);
+        document.getElementById('Score').value = score;
+    }
+</script>

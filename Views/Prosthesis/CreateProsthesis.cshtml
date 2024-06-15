@@ -1,96 +1,146 @@
-﻿@model IW7PP.Models.ProsthesisM.Prosthesis
+﻿@model IW7PP.ViewModel.ProsthesisVM
 
 @{
-    Layout = null; // Quitamos el layout para evitar conflictos
-    ViewData["Title"] = "Crear Prótesis";
+    ViewData["Title"] = "Create Prosthesis";
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewData["Title"]</title>
-    <link href="~/css/site.css" rel="stylesheet" /> <!-- Asegúrate de ajustar la ruta según tu estructura de carpetas -->
-    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="container">
-        <h1 class="text-center">Crear Prótesis</h1>
-        <hr />
+<h2>Create Prosthesis</h2>
 
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <form asp-action="CreateProsthesis">
-                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
-                    <!-- SocketId -->
-                    <div class="form-group">
-                        <label asp-for="SocketId" class="control-label"></label>
-                        <select asp-for="SocketId" class="form-control" asp-items="ViewBag.SocketId"></select>
-                    </div>
-
-                    <!-- LinerId -->
-                    <div class="form-group">
-                        <label asp-for="LinerId" class="control-label"></label>
-                        <select asp-for="LinerId" class="form-control" asp-items="ViewBag.LinerId"></select>
-                    </div>
-
-                    <!-- TubeId -->
-                    <div class="form-group">
-                        <label asp-for="TubeId" class="control-label"></label>
-                        <select asp-for="TubeId" class="form-control" asp-items="ViewBag.TubeId"></select>
-                    </div>
-
-                    <!-- FootId -->
-                    <div class="form-group">
-                        <label asp-for="FootId" class="control-label"></label>
-                        <select asp-for="FootId" class="form-control" asp-items="ViewBag.FootId"></select>
-                    </div>
-
-                    <!-- UnionSocketId -->
-                    <div class="form-group">
-                        <label asp-for="UnionSocketId" class="control-label"></label>
-                        <select asp-for="UnionSocketId" class="form-control" asp-items="ViewBag.UnionSocketId"></select>
-                    </div>
-
-                    <!-- KneeArticulateId -->
-                    <div class="form-group">
-                        <label asp-for="KneeArticulateId" class="control-label"></label>
-                        <select asp-for="KneeArticulateId" class="form-control" asp-items="ViewBag.KneeArticulateId"></select>
-                    </div>
-
-                    <!-- UpperLimbAmputationsiD -->
-                    <div class="form-group">
-                        <label asp-for="UpperLimbAmputationsiD" class="control-label"></label>
-                        <select asp-for="UpperLimbAmputationsiD" class="form-control" asp-items="ViewBag.UpperLimbAmputationsiD"></select>
-                    </div>
-
-                    <!-- LowerLimbAmputationsiD -->
-                    <div class="form-group">
-                        <label asp-for="LowerLimbAmputationsiD" class="control-label"></label>
-                        <select asp-for="LowerLimbAmputationsiD" class="form-control" asp-items="ViewBag.LowerLimbAmputationsiD"></select>
-                    </div>
-
-                    <div class="alert alert-info text-center" role="alert">
-                        La durabilidad se mostrará en la tabla general después de crear la prótesis.
-                    </div>
-
-                    <div class="form-group text-center">
-                        <input type="submit" value="Crear" class="btn btn-primary" />
-                    </div>
-                </form>
-            </div>
-        </div>
+<form asp-action="CreateProsthesis" method="post">
+    <div class="form-group">
+        <label for="prosthesisType">Tipo de Prótesis</label>
+        <select id="prosthesisType" class="form-control">
+            <option value="">Seleccionar Tipo</option>
+            <option value="Upper">Upper</option>
+            <option value="Lower">Lower</option>
+        </select>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - IW7PP
-        </div>
-    </footer>
+    <div class="form-group">
+        <label for="SocketId">Socket</label>
+        <select asp-for="SocketId" class="form-control" id="socketDropdown">
+            <option value="">Seleccionar Socket</option>
+        </select>
+    </div>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script> <!-- Asegúrate de ajustar la ruta según tu estructura de carpetas -->
-</body>
-</html>
+    <div class="form-group">
+        <label for="TubeId">Tube</label>
+        <select asp-for="TubeId" class="form-control" id="tubeDropdown">
+            <option value="">Seleccionar Tube</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="UnionSocketId">Union Socket</label>
+        <select asp-for="UnionSocketId" class="form-control" id="unionSocketDropdown">
+            <option value="">Seleccionar Union Socket</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="KneeArticulateId">Knee Articulate</label>
+        <select asp-for="KneeArticulateId" class="form-control" id="kneeDropdown">
+            <option value="">Seleccionar Knee Articulate</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="FootId">Foot</label>
+        <select asp-for="FootId" class="form-control" id="footDropdown">
+            <option value="">Seleccionar Foot</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="LinerId">Liner</label>
+        <select asp-for="LinerId" class="form-control" id="linerDropdown">
+            <option value="">Seleccionar Liner</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="UpperLimbAmputationsiD">Upper Limb Amputation</label>
+        <select asp-for="UpperLimbAmputationsiD" class="form-control" id="upperLimbAmputationDropdown" disabled>
+            <option value="">No aplica</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="LowerLimbAmputationsiD">Lower Limb Amputation</label>
+        <select asp-for="LowerLimbAmputationsiD" class="form-control" id="lowerLimbAmputationDropdown" disabled>
+            <option value="">No aplica</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#prosthesisType').change(function () {
+                var prosthesisType = $(this).val();
+
+                if (prosthesisType === "Upper") {
+                    $('#lowerLimbAmputationDropdown').val('').attr('disabled', true);
+                    $('#upperLimbAmputationDropdown').attr('disabled', false);
+                } else if (prosthesisType === "Lower") {
+                    $('#upperLimbAmputationDropdown').val('').attr('disabled', true);
+                    $('#lowerLimbAmputationDropdown').attr('disabled', false);
+                } else {
+                    clearDropdowns();
+                    $('#lowerLimbAmputationDropdown').val('').attr('disabled', true);
+                    $('#upperLimbAmputationDropdown').val('').attr('disabled', true);
+                }
+
+                $.ajax({
+                    url: '@Url.Action("GetAllMaterials")',
+                    type: 'GET',
+                    success: function (data) {
+                        console.log(data); // Para depuración, ver en la consola los datos recibidos
+
+                        clearDropdowns();
+
+                        // Populate dropdowns with new data
+                        populateDropdown('#socketDropdown', data.sockets, 'id', 'description');
+                        populateDropdown('#linerDropdown', data.liners, 'id', 'name');
+                        populateDropdown('#tubeDropdown', data.tubes, 'id', 'name');
+                        populateDropdown('#kneeDropdown', data.knees, 'id', 'name');
+                        populateDropdown('#footDropdown', data.feet, 'id', 'name');
+                        populateDropdown('#unionSocketDropdown', data.unionSockets, 'id', 'name');
+                        if (prosthesisType !== "Upper") {
+                            populateDropdown('#lowerLimbAmputationDropdown', data.lowerLimbAmputations, 'id', 'amputationName');
+                        }
+                        if (prosthesisType !== "Lower") {
+                            populateDropdown('#upperLimbAmputationDropdown', data.upperLimbAmputations, 'id', 'amputationName');
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        alert("An error occurred while loading the data: " + error);
+                    }
+                });
+            });
+
+            function clearDropdowns() {
+                $('#socketDropdown').empty().append('<option value="">Seleccionar Socket</option>');
+                $('#linerDropdown').empty().append('<option value="">Seleccionar Liner</option>');
+                $('#tubeDropdown').empty().append('<option value="">Seleccionar Tube</option>');
+                $('#kneeDropdown').empty().append('<option value="">Seleccionar Knee Articulate</option>');
+                $('#footDropdown').empty().append('<option value="">Seleccionar Foot</option>');
+                $('#unionSocketDropdown').empty().append('<option value="">Seleccionar Union Socket</option>');
+                $('#upperLimbAmputationDropdown').empty().append('<option value="">No aplica</option>');
+                $('#lowerLimbAmputationDropdown').empty().append('<option value="">No aplica</option>');
+            }
+
+            function populateDropdown(selector, data, valueField, textField) {
+                if (data && data.length > 0) {
+                    $.each(data, function (index, item) {
+                        $(selector).append($('<option>', { value: item[valueField], text: item[textField] }));
+                    });
+                }
+            }
+        });
+    </script>
+}

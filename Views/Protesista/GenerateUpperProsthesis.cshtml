@@ -1,0 +1,74 @@
+﻿@model IW7PP.ViewModel.ProsthesisVM
+
+@{
+    ViewData["Title"] = "Generar Prótesis Superior";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div id="loadingMessage" style="display: none;">
+    <div class="alert alert-info" role="alert">
+        Cargando componentes, por favor espere...
+    </div>
+</div>
+
+<div id="loadedMessage" style="display: none;">
+    <div class="alert alert-success" role="alert">
+        Componentes cargados correctamente.
+    </div>
+</div>
+
+<form asp-action="GenerateRecommendedProsthesis" method="post">
+    <div class="form-group">
+        <label>Amputation Name</label>
+        <input type="text" class="form-control" value="@ViewBag.AmputationName" readonly />
+        <input type="hidden" asp-for="UpperLimbAmputationsiD" />
+        <input type="hidden" name="ClienteId" value="@ViewBag.ClienteId" />
+    </div>
+    <div class="form-group">
+        <label>Socket</label>
+        <input type="text" class="form-control" value="@ViewBag.Components.SocketDescription" readonly />
+        <input type="hidden" asp-for="SocketId" />
+    </div>
+    <div class="form-group">
+        <label>Liner</label>
+        <input type="text" class="form-control" value="@ViewBag.Components.LinerName" readonly />
+        <input type="hidden" asp-for="LinerId" />
+    </div>
+    <div class="form-group">
+        <label>Tube</label>
+        <input type="text" class="form-control" value="@ViewBag.Components.TubeName" readonly />
+        <input type="hidden" asp-for="TubeId" />
+    </div>
+    <div class="form-group">
+        <label>Union Socket</label>
+        <input type="text" class="form-control" value="@ViewBag.Components.UnionSocketDescription" readonly />
+        <input type="hidden" asp-for="UnionSocketId" />
+    </div>
+    <div class="form-group">
+        <label>Knee Articulate</label>
+        <input type="text" class="form-control" value="@ViewBag.Components.KneeArticulateName" readonly />
+        <input type="hidden" asp-for="KneeArticulateId" />
+    </div>
+    <div class="form-group">
+        <label>Foot</label>
+        <input type="text" class="form-control" value="@ViewBag.Components.FootName" readonly />
+        <input type="hidden" asp-for="FootId" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Guardar Prótesis" class="btn btn-primary" />
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#loadingMessage').show();
+            // Simula el tiempo de carga con un timeout
+            setTimeout(function () {
+                $('#loadingMessage').hide();
+                $('#loadedMessage').show();
+            }, 1000); // Puedes ajustar el tiempo según sea necesario
+        });
+    </script>
+}

@@ -1,0 +1,125 @@
+﻿@{
+    ViewData["Title"] = "Seleccionar Tipo de Amputación";
+    var clienteId = (int)ViewBag.ClienteId;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        #loading {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+
+        .spinner-border {
+            width: 3rem;
+            height: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">@ViewData["Title"]</h1>
+        <hr />
+        <div class="form-group">
+            <label for="clienteSearch">Buscar Cliente</label>
+            <input type="text" id="clienteSearch" class="form-control" placeholder="Buscar por nombre o ID" />
+            <button type="button" id="searchButton" class="btn btn-primary mt-2">Buscar</button>
+        </div>
+        <div id="clienteResults" class="mt-3"></div>
+
+        <form asp-action="SelectAmputationType" method="post" id="amputationForm">
+            <input type="hidden" name="clienteId" value="@clienteId" id="ClienteId" />
+            <div class="form-group">
+                <label for="upperLimbAmputationId">Amputación de Miembro Superior</label>
+                <select id="upperLimbAmputationId" name="upperLimbAmputationId" class="form-control" onchange="disableOtherSelect('upper')">
+                    <option value="">Seleccionar</option>
+                    <option value="No aplica">No aplica</option>
+                    @foreach (var item in (IEnumerable<SelectListItem>)ViewBag.UpperLimbAmputations)
+                    {
+                        <option value="@item.Value">@item.Text</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="lowerLimbAmputationId">Amputación de Miembro Inferior</label>
+                <select id="lowerLimbAmputationId" name="lowerLimbAmputationId" class="form-control" onchange="disableOtherSelect('lower')">
+                    <option value="">Seleccionar</option>
+                    <option value="No aplica">No aplica</option>
+                    @foreach (var item in (IEnumerable<SelectListItem>)ViewBag.LowerLimbAmputations)
+                    {
+                        <option value="@item.Value">@item.Text</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group text-center">
+                <input type="submit" value="Generar Prótesis Recomendada" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+    <div id="loading">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Estamos generarndo la mejor protesis...</span>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function disableOtherSelect(selected) {
+            if (selected === 'upper') {
+                if (document.getElementById('upperLimbAmputationId').value === 'No aplica') {
+                    document.getElementById('lowerLimbAmputationId').disabled = false;
+                    document.getElementById('lowerLimbAmputationId').value = 'No aplica';
+                } else {
+                    document.getElementById('lowerLimbAmputationId').disabled = true;
+                    document.getElementById('lowerLimbAmputationId').value = '';
+                }
+            } else if (selected === 'lower') {
+                if (document.getElementById('lowerLimbAmputationId').value === 'No aplica') {
+                    document.getElementById('upperLimbAmputationId').disabled = false;
+                    document.getElementById('upperLimbAmputationId').value = 'No aplica';
+                } else {
+                    document.getElementById('upperLimbAmputationId').disabled = true;
+                    document.getElementById('upperLimbAmputationId').value = '';
+                }
+            }
+        }
+
+        $(document).ready(function () {
+            $('#searchButton').click(function () {
+                var query = $('#clienteSearch').val();
+                $.ajax({
+                    url: '@Url.Action("SearchCliente", "Protesista")',
+                    type: 'GET',
+                    data: { query: query },
+                    success: function (data) {
+                        $('#clienteResults').html(data);
+                    },
+                    error: function () {
+                        alert('Error searching for cliente');
+                    }
+                });
+            });
+
+            $('#amputationForm').submit(function () {
+                $('#loading').show();
+            });
+        });
+
+        function selectCliente(clienteId) {
+            $('#ClienteId').val(clienteId);
+        }
+    </script>
+</body>
+</html>

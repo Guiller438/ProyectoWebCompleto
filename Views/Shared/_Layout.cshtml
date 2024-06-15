@@ -24,20 +24,24 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">IW7PP</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                @if (isAdmin)
+                {
+                    <a class="navbar-brand" asp-area="" asp-controller="Panel" asp-action="Admin">IW7PP</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                }
+                else
+                {
+                    <a class="navbar-brand" asp-area="" asp-controller="Panel" asp-action="Protesista">IW7PP</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                }
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
                         @if (SignInManager.IsSignedIn(User))
                         {
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a>
-                            </li>
                         }
                     </ul>
                     <ul class="navbar-nav ms-auto">
@@ -70,15 +74,15 @@
                                         <li>
                                             <a class="dropdown-item" asp-controller="Prosthesis" asp-action="Index">Administrador de prótesis</a>
                                         </li>
+                                        <li>
+                                            <a class="dropdown-item" asp-controller="Cliente" asp-action="Index">Administrador de cliente</a>
+                                        </li>
                                     }
                                 </ul>
                             </li>
                         }
                         else
                         {
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Users" asp-action="Registro">Registro</a>
-                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Users" asp-action="Login">Acceder</a>
                             </li>
@@ -93,11 +97,6 @@
             @RenderBody()
         </main>
     </div>
-    <footer class="border-top footer text-muted mt-auto py-3">
-        <div class="container">
-            &copy; 2024 - IW7PP - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

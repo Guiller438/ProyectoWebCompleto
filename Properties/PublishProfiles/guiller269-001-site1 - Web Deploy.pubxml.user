@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <History>True|2024-06-15T14:51:36.4857594Z||;True|2024-06-15T09:18:20.6177346-05:00||;True|2024-06-15T09:11:18.6320962-05:00||;True|2024-06-15T08:59:08.7005768-05:00||;False|2024-06-15T08:58:40.4487577-05:00||;True|2024-06-15T08:41:04.0332384-05:00||;True|2024-06-15T08:40:01.2247854-05:00||;True|2024-06-15T08:36:38.2930790-05:00||;True|2024-06-14T13:51:43.6988713-05:00||;False|2024-06-14T13:48:48.3613846-05:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=SQL8006.site4now.net%3bInitial Catalog=db_aa9f2f_bdd45%3bUser Id=db_aa9f2f_bdd45_admin%3bPassword=guillermito269%3bTrustServerCertificate=True%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

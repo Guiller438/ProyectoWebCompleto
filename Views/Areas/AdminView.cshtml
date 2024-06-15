@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Panel de Administración";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Panel de Administración</h1>
+        <hr />
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        Clientes
+                    </div>
+                    <div class="card-body">
+                        <p>Gestiona los clientes del sistema.</p>
+                        <a href="@Url.Action("Index", "Cliente")" class="btn btn-primary">Ver Clientes</a>
+                        <a href="@Url.Action("Create", "Cliente")" class="btn btn-success">Crear Cliente</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        Prótesis
+                    </div>
+                    <div class="card-body">
+                        <p>Gestiona las prótesis disponibles.</p>
+                        <a href="@Url.Action("Index", "Protesis")" class="btn btn-primary">Ver Prótesis</a>
+                        <a href="@Url.Action("Create", "Protesis")" class="btn btn-success">Crear Prótesis</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        Estadísticas
+                    </div>
+                    <div class="card-body">
+                        <p>Visualiza estadísticas y reportes del sistema.</p>
+                        <a href="@Url.Action("Statistics", "Admin")" class="btn btn-primary">Ver Estadísticas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

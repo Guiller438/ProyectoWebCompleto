@@ -1,0 +1,98 @@
+﻿@model IEnumerable<IW7PP.Models.ProsthesisM.ComponentUsageStatistics>
+
+@{
+    ViewData["Title"] = "Estadísticas de Uso de Componentes";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tipo de Componente</th>
+            <th>Nombre del Componente</th>
+            <th>Conteo de Uso</th>
+            <th>Durabilidad Promedio</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ComponentType</td>
+                <td>@item.ComponentName</td>
+                <td>@item.UsageCount</td>
+                <td>@item.AverageDurability</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<canvas id="usageChart" width="400" height="400"></canvas>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var ctx = document.getElementById('usageChart').getContext('2d');
+            var usageData = @Html.Raw(Json.Serialize(ViewBag.ComponentUsageStatsJson));
+
+            // Separar los datos por tipo de amputación
+            var upperLimbLabels = usageData.filter(function (stat) {
+                return stat.ComponentType === "Upper Limb";
+            }).map(function (stat) {
+                return stat.ComponentName;
+            });
+
+            var lowerLimbLabels = usageData.filter(function (stat) {
+                return stat.ComponentType === "Lower Limb";
+            }).map(function (stat) {
+                return stat.ComponentName;
+            });
+
+            var upperLimbData = usageData.filter(function (stat) {
+                return stat.ComponentType === "Upper Limb";
+            }).map(function (stat) {
+                return stat.AverageDurability;
+            });
+
+            var lowerLimbData = usageData.filter(function (stat) {
+                return stat.ComponentType === "Lower Limb";
+            }).map(function (stat) {
+                return stat.AverageDurability;
+            });
+
+            var chart = new Chart(ctx, {
+                type: 'horizontalBar',
+                data: {
+                    labels: upperLimbLabels.concat(lowerLimbLabels),
+                    datasets: [
+                        {
+                            label: 'Upper Limb Durability',
+                            data: upperLimbData,
+                            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                            borderColor: 'rgba(54, 162, 235, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Lower Limb Durability',
+                            data: lowerLimbData,
+                            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                            borderColor: 'rgba(255, 99, 132, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+        });
+    </script>
+}

@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Método de Creación de Prótesis";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .big-button {
+            width: 100%;
+            padding: 40px;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">@ViewData["Title"]</h1>
+        <hr />
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <a href="@Url.Action("CreateProsthesis", "Prosthesis")" class="btn btn-primary big-button">Crear Prótesis Manualmente</a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <a href="@Url.Action("SelectAmputationType", "Protesista")" class="btn btn-success big-button">Generar Prótesis Recomendada</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -24,6 +24,7 @@
                         <thead class="thead-light">
                             <tr>
                                 <th>Id</th>
+                                <th>Socket</th>
                                 <th>Liner</th>
                                 <th>Tube</th>
                                 <th>Foot</th>
@@ -41,6 +42,7 @@
                             {
                                 <tr>
                                     <td>@Html.DisplayFor(m => item.Id)</td>
+                                    <td>@Html.DisplayFor(m => item.Socket.Description)</td>
                                     <td>@Html.DisplayFor(m => item.Liner.Name)</td>
                                     <td>@Html.DisplayFor(m => item.Tube.Name)</td>
                                     <td>@Html.DisplayFor(m => item.Foot.Name)</td>
@@ -52,8 +54,8 @@
                                     <td>@Html.DisplayFor(m => item.AverageDurability)</td>
                                     <td>
                                         <div class="btn-group" role="group" aria-label="Acciones">
-                                            <a class="btn btn-sm btn-primary" href="@Url.Action("Editar", "Prosthesis", new { id = item.Id })">Editar</a>
-                                            <form asp-action="Borrar" asp-route-id="@item.Id" class="d-inline-block" method="post">
+                                            <a class="btn btn-sm btn-primary" href="@Url.Action("EditProsthesis", "Prosthesis", new { id = item.Id })">Editar</a>
+                                            <form asp-action="DeleteProsthesis" asp-route-id="@item.Id" class="d-inline-block" method="post">
                                                 <button type="submit" onclick="return confirm('¿Está seguro de borrar este registro?')" class="btn btn-sm btn-danger">Borrar</button>
                                             </form>
                                         </div>

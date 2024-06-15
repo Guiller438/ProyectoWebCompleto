@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IW7PP.Models.Amputations
 {
-    public class UpperLimbAmputation
+    public class UpperLimbAmputation 
     {
         [Key]
         public Guid Id { get; set; }

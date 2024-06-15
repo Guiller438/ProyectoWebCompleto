@@ -1,0 +1,53 @@
+﻿@model Microsoft.AspNetCore.Identity.IdentityUser
+
+@{
+    ViewData["Title"] = "Acciones de Protesista";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .big-button {
+            width: 100%;
+            padding: 40px;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .user-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">@ViewData["Title"]</h1>
+        <div class="user-info">
+            <h2>Bienvenido, @Model.UserName!</h2>
+            <h3>Rol: @ViewBag.RoleName</h3>
+        </div>
+        <hr />
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <a href="@Url.Action("SelectProsthesisCreationMethod", "Protesista")" class="btn btn-primary big-button">Crear Prótesis</a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <a href="@Url.Action("Index", "Cliente")" class="btn btn-success big-button">Asignar Prótesis</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

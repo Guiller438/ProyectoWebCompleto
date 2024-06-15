@@ -35,10 +35,9 @@ namespace IW7PP.Data
 
         public DbSet<KneeArticulate> KneeArticulates { get; set; }
 
-        public DbSet<Cliente> Clientes { get; set; }
-
         public DbSet<LifeStyle> LifeStyles { get; set; }
 
+        public DbSet<ClientesProtesicos> ClientesProtesicos { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)

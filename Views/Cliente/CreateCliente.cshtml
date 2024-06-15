@@ -1,0 +1,120 @@
+﻿@model IW7PP.ViewModel.ClienteVM
+
+@{
+    ViewData["Title"] = "Crear Cliente";
+    bool fromSelectAmputationType = ViewBag.FromSelectAmputationType ?? false;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        /* Estilos para la pantalla de carga */
+        .loading-screen {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 9999;
+            text-align: center;
+            padding-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Cargando...</span>
+        </div>
+        <p>Procesando...</p>
+    </div>
+
+    <div class="container" id="mainContent">
+        <h1 class="text-center">Crear Cliente</h1>
+        <hr />
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form asp-action="CreateCliente" id="createClienteForm">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <!-- Nombre -->
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                    </div>
+
+                    <!-- Apellido -->
+                    <div class="form-group">
+                        <label asp-for="LastName" class="control-label"></label>
+                        <input asp-for="LastName" class="form-control" />
+                    </div>
+
+                    <!-- Teléfono -->
+                    <div class="form-group">
+                        <label asp-for="PhoneNumber" class="control-label"></label>
+                        <input asp-for="PhoneNumber" class="form-control" />
+                    </div>
+
+                    @if (!fromSelectAmputationType)
+                    {
+                        <!-- Prótesis (Select) -->
+                        <div class="form-group">
+                            <label asp-for="ProtesisId" class="control-label"></label>
+                            <select asp-for="ProtesisId" class="form-control" asp-items="ViewBag.ProsthesisId"></select>
+                        </div>
+                    }
+                    else
+                    {
+                        <!-- Campo oculto para el ID del cliente -->
+                        <input type="hidden" asp-for="Id" />
+                    }
+
+                    <!-- Nota sobre el estilo de vida -->
+                    <div class="alert alert-info" role="alert">
+                        Nota: El estilo de vida será calculado automáticamente al crear el cliente.
+                    </div>
+
+                    <input type="hidden" asp-for="LifeStyleId" />
+
+                    <div class="form-group text-center">
+                        <input type="submit" value="Crear" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        // Mostrar pantalla de carga si viene de SelectAmputationType
+        $(document).ready(function () {
+            var fromSelectAmputationType = @Html.Raw(fromSelectAmputationType.ToString().ToLower());
+            if (fromSelectAmputationType) {
+                $("#loadingScreen").show();
+                $("#mainContent").hide();
+                // Simular una carga (puedes reemplazar esto con la lógica real)
+                setTimeout(function () {
+                    $("#loadingScreen").hide();
+                    $("#mainContent").show();
+                }, 2000); // Esperar 2 segundos antes de mostrar el contenido principal
+            }
+
+            // Mostrar pantalla de carga al enviar el formulario
+            $("#createClienteForm").on("submit", function () {
+                $("#loadingScreen").show();
+                $("#mainContent").hide();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -23,9 +23,7 @@ namespace IW7PP.Models.ProsthesisM
 
 
         [Required]
-        [MaxLength(2)]
-        [MinLength(1)]
-        [RegularExpression(@"^[a-zA-Z0-9\s]*$")]
+
         public double Durability { get; set; }
     }
 }

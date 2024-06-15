@@ -1,5 +1,6 @@
 ﻿using IW7PP.Data;
 using IW7PP.Models.Amputations;
+using IW7PP.Models.Cliente;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,14 +15,13 @@ namespace IW7PP.Controllers
         {
             _context = context;
         }
-        
-            
-        
+
         public IActionResult Index()
         {
             var amputations = _context.UpperLimbAmputations.ToList();
             return View(amputations);
         }
+
         public IActionResult LowerLimbAmputations()
         {
             var amputations = _context.LowerLimbAmputations.ToList();
@@ -30,10 +30,10 @@ namespace IW7PP.Controllers
 
         [HttpGet]
         public IActionResult CreateUap()
-        {           
+        {
             return View();
         }
-        
+
         [HttpPost]
         public async Task<IActionResult> CreateUap(UpperLimbAmputation aup)
         {
@@ -41,80 +41,73 @@ namespace IW7PP.Controllers
             {
                 _context.Add(aup);
                 await _context.SaveChangesAsync();
+                TempData["Success"] = "Amputación de miembro superior creada exitosamente.";
                 return RedirectToAction(nameof(Index));
             }
             return View(aup);
         }
 
-
-
         [HttpGet]
         public IActionResult EditUap(Guid id)
         {
-            if (Guid.Equals == null)
+            if (id == Guid.Empty)
             {
                 return View();
             }
             else
             {
-                //Actualizar el registro
                 var amputation = _context.UpperLimbAmputations.FirstOrDefault(a => a.Id == id);
                 return View(amputation);
             }
-            
         }
 
         [HttpPost]
-
         public async Task<IActionResult> EditUap(UpperLimbAmputation uap)
         {
-            //Se crea edita la amputacion
             var amputation = _context.UpperLimbAmputations.FirstOrDefault(a => a.Id == uap.Id);
             if (amputation == null)
             {
-                TempData["Error"] = "No existe la amputación";
+                TempData["Error"] = "No existe la amputación.";
                 return RedirectToAction(nameof(Index));
             }
 
             amputation.AmputationName = uap.AmputationName;
 
             await _context.SaveChangesAsync();
+            TempData["Success"] = "Amputación de miembro superior actualizada exitosamente.";
             return RedirectToAction(nameof(Index));
-
         }
 
-
         [HttpPost]
-
         public async Task<IActionResult> Remove(Guid id)
         {
-            //Se borra la amputacion
             var amputation = _context.UpperLimbAmputations.FirstOrDefault(a => a.Id == id);
             var amputationL = _context.LowerLimbAmputations.FirstOrDefault(a => a.Id == id);
             if (amputation == null && amputationL == null)
             {
-                TempData["Error"] = "No existe la amputación";
+                TempData["Error"] = "No existe la amputación.";
                 return RedirectToAction(nameof(Index));
             }
             else
             {
-
                 if (amputationL == null)
                 {
                     _context.UpperLimbAmputations.Remove(amputation);
                     await _context.SaveChangesAsync();
+                    TempData["Success"] = "Amputación de miembro superior eliminada exitosamente.";
                     return RedirectToAction(nameof(Index));
                 }
                 else
                 {
                     _context.LowerLimbAmputations.Remove(amputationL);
                     await _context.SaveChangesAsync();
-                    return RedirectToAction("LowerLimbAmputations", "Amputations");
+                    TempData["Success"] = "Amputación de miembro inferior eliminada exitosamente.";
+                    return RedirectToAction(nameof(LowerLimbAmputations));
                 }
             }
         }
 
-        //Metodo para alp
+        // Método para alp
         [HttpGet]
         public IActionResult CreateAlp()
         {
@@ -126,9 +119,10 @@ namespace IW7PP.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(alp);
+                _context.LowerLimbAmputations.Add(alp);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("LowerLimbAmputations", "Amputations");
+                TempData["Success"] = "Amputación de miembro inferior creada exitosamente.";
+                return RedirectToAction(nameof(LowerLimbAmputations));
             }
             return View(alp);
         }
@@ -136,37 +130,32 @@ namespace IW7PP.Controllers
         [HttpGet]
         public IActionResult EditAlp(Guid id)
         {
-            if (Guid.Equals == null)
+            if (id == Guid.Empty)
             {
                 return View();
             }
             else
             {
-                //Actualizar el registro
                 var amputation = _context.LowerLimbAmputations.FirstOrDefault(a => a.Id == id);
                 return View(amputation);
             }
-
         }
 
         [HttpPost]
-
-        public async Task<IActionResult> EditAlp(LowerLimbAmputation uap)
+        public async Task<IActionResult> EditAlp(LowerLimbAmputation alp)
         {
-            //Se crea edita la amputacion
-            var amputation = _context.LowerLimbAmputations.FirstOrDefault(a => a.Id == uap.Id);
+            var amputation = _context.LowerLimbAmputations.FirstOrDefault(a => a.Id == alp.Id);
             if (amputation == null)
             {
-                TempData["Error"] = "No existe la amputación";
-                return RedirectToAction("LowerLimbAmputations", "Amputations"); ;
+                TempData["Error"] = "No existe la amputación.";
+                return RedirectToAction(nameof(LowerLimbAmputations));
             }
 
-            amputation.AmputationName = uap.AmputationName;
+            amputation.AmputationName = alp.AmputationName;
 
             await _context.SaveChangesAsync();
-            return RedirectToAction("LowerLimbAmputations", "Amputations");
-
+            TempData["Success"] = "Amputación de miembro inferior actualizada exitosamente.";
+            return RedirectToAction(nameof(LowerLimbAmputations));
         }
-
     }
 }

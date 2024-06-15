@@ -1,0 +1,25 @@
+﻿@model IEnumerable<IW7PP.Models.Cliente.ClientesProtesicos>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Teléfono</th>
+            <th>Seleccionar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cliente in Model)
+        {
+            <tr>
+                <td>@cliente.Name</td>
+                <td>@cliente.LastName</td>
+                <td>@cliente.PhoneNumber</td>
+                <td>
+                    <button type="button" class="btn btn-primary" onclick="selectCliente(@cliente.Id)">Seleccionar</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -3,6 +3,8 @@
     public class ProsthesisVM
     {
         public int Id { get; set; }
+
+        public int? ClienteId { get; set; }
         public int? SocketId { get; set; }
         public int? LinerId { get; set; }
         public int? TubeId { get; set; }
