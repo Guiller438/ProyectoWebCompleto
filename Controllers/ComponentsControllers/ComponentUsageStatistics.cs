@@ -1,5 +1,6 @@
 ﻿using IW7PP.Data;
 using IW7PP.Models.ProsthesisM;
+using IW7PP.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
@@ -168,5 +169,79 @@ namespace IW7PP.Controllers.ComponentsControllers
 
             return View(componentUsageStats);
         }
+        [HttpGet]
+        public IActionResult FilterProsthesis()
+        {
+            var model = new ProsthesisFilterVM
+            {
+                StartDate = DateTime.Now.AddMonths(-1), // Default to last month
+                EndDate = DateTime.Now
+            };
+            return View(model);
+        }
+        [HttpPost]
+        public async Task<IActionResult> FilterProsthesis(ProsthesisFilterVM model)
+        {
+            var prostheses = await _context.Prostheses
+                .Where(p => p.FechaRegistro >= model.StartDate && p.FechaRegistro <= model.EndDate)
+                .Include(p => p.Socket)
+                .Include(p => p.Liner)
+                .Include(p => p.Tube)
+                .Include(p => p.Foot)
+                .Include(p => p.UnionSocket)
+                .Include(p => p.RodillaArticulada)
+                .Include(p => p.UpperLimbAmputations)
+                .Include(p => p.LowerLimbAmputations)
+                .OrderByDescending(p => p.AverageDurability)
+                .ToListAsync();
+
+            var upperProstheses = prostheses.Where(p => p.UpperLimbAmputationsiD != null).Select(p => new ProsthesisVM
+            {
+                Id = p.Id,
+                SocketId = p.SocketId,
+                LinerId = p.LinerId,
+                TubeId = p.TubeId,
+                FootId = p.FootId,
+                UnionSocketId = p.UnionSocketId,
+                KneeArticulateId = p.KneeArticulateId,
+                UpperLimbAmputationsiD = p.UpperLimbAmputationsiD,
+                LowerLimbAmputationsiD = p.LowerLimbAmputationsiD,
+                Durability = p.Durability,
+                AverageDurability = p.AverageDurability,
+                FechaRegistro = p.FechaRegistro
+            }).ToList();
+
+            var lowerProstheses = prostheses.Where(p => p.LowerLimbAmputationsiD != null).Select(p => new ProsthesisVM
+            {
+                Id = p.Id,
+                SocketId = p.SocketId,
+                LinerId = p.LinerId,
+                TubeId = p.TubeId,
+                FootId = p.FootId,
+                UnionSocketId = p.UnionSocketId,
+                KneeArticulateId = p.KneeArticulateId,
+                UpperLimbAmputationsiD = p.UpperLimbAmputationsiD,
+                LowerLimbAmputationsiD = p.LowerLimbAmputationsiD,
+                Durability = p.Durability,
+                AverageDurability = p.AverageDurability,
+                FechaRegistro = p.FechaRegistro
+            }).ToList();
+
+            foreach (var prosthesis in upperProstheses.Concat(lowerProstheses))
+            {
+                ViewData["SocketName_" + prosthesis.SocketId] = _context.Sockets.FirstOrDefault(s => s.Id == prosthesis.SocketId)?.Description;
+                ViewData["LinerName_" + prosthesis.LinerId] = _context.Liners.FirstOrDefault(l => l.Id == prosthesis.LinerId)?.Name;
+                ViewData["TubeName_" + prosthesis.TubeId] = _context.Tubes.FirstOrDefault(t => t.Id == prosthesis.TubeId)?.Name;
+                ViewData["FootName_" + prosthesis.FootId] = _context.Feet.FirstOrDefault(f => f.Id == prosthesis.FootId)?.Name;
+                ViewData["UnionSocketName_" + prosthesis.UnionSocketId] = _context.UnionSockets.FirstOrDefault(u => u.Id == prosthesis.UnionSocketId)?.Name;
+                ViewData["KneeArticulateName_" + prosthesis.KneeArticulateId] = _context.KneeArticulates.FirstOrDefault(k => k.Id == prosthesis.KneeArticulateId)?.Name;
+            }
+
+            model.UpperProstheses = upperProstheses;
+            model.LowerProstheses = lowerProstheses;
+
+            return View(model);
+        }
+
     }
 }

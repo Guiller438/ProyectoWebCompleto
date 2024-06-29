@@ -3,16 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\controllers\\componentscontrollers\\componentusagestatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:controllers\\componentscontrollers\\componentusagestatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\controllers\\componentscontrollers\\protesistacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:controllers\\componentscontrollers\\protesistacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\views\\components\\filterprosthesis.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\components\\filterprosthesis.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\views\\components\\componentusage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\components\\componentusage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\views\\prosthesis\\updateprosthesisdates.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\prosthesis\\updateprosthesisdates.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\viewmodel\\prosthesisfiltervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:viewmodel\\prosthesisfiltervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\controllers\\componentscontrollers\\prosthesiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:controllers\\componentscontrollers\\prosthesiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\models\\prosthesism\\prosthesis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:models\\prosthesism\\prosthesis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\viewmodel\\prosthesisvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:viewmodel\\prosthesisvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,38 +51,104 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T15:40:36.786Z",
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Views\\Users\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Login.cshtml",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Views\\Users\\Login.cshtml",
+              "RelativeToolTip": "Views\\Users\\Login.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-29T00:00:55.26Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-15T15:40:30.265Z",
-              "EditorCaption": ""
+              "DocumentIndex": 3,
+              "Title": "ComponentUsage.cshtml",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Views\\Components\\ComponentUsage.cshtml",
+              "RelativeDocumentMoniker": "Views\\Components\\ComponentUsage.cshtml",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Views\\Components\\ComponentUsage.cshtml",
+              "RelativeToolTip": "Views\\Components\\ComponentUsage.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T17:17:37.972Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProtesistaController.cs",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Controllers\\ComponentsControllers\\ProtesistaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ComponentsControllers\\ProtesistaController.cs",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Controllers\\ComponentsControllers\\ProtesistaController.cs",
-              "RelativeToolTip": "Controllers\\ComponentsControllers\\ProtesistaController.cs",
+              "Title": "FilterProsthesis.cshtml",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Views\\Components\\FilterProsthesis.cshtml",
+              "RelativeDocumentMoniker": "Views\\Components\\FilterProsthesis.cshtml",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Views\\Components\\FilterProsthesis.cshtml",
+              "RelativeToolTip": "Views\\Components\\FilterProsthesis.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T16:36:50.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ComponentUsageStatistics.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Controllers\\ComponentsControllers\\ComponentUsageStatistics.cs",
+              "RelativeDocumentMoniker": "Controllers\\ComponentsControllers\\ComponentUsageStatistics.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Controllers\\ComponentsControllers\\ComponentUsageStatistics.cs",
+              "RelativeToolTip": "Controllers\\ComponentsControllers\\ComponentUsageStatistics.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T15:17:27.988Z",
+              "WhenOpened": "2024-06-15T16:33:55.12Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProsthesisFilterVM.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\ViewModel\\ProsthesisFilterVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ProsthesisFilterVM.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\ViewModel\\ProsthesisFilterVM.cs",
+              "RelativeToolTip": "ViewModel\\ProsthesisFilterVM.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T16:32:42.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UpdateProsthesisDates.cshtml",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Views\\Prosthesis\\UpdateProsthesisDates.cshtml",
+              "RelativeDocumentMoniker": "Views\\Prosthesis\\UpdateProsthesisDates.cshtml",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Views\\Prosthesis\\UpdateProsthesisDates.cshtml",
+              "RelativeToolTip": "Views\\Prosthesis\\UpdateProsthesisDates.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T16:24:15.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProsthesisController.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Controllers\\ComponentsControllers\\ProsthesisController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ComponentsControllers\\ProsthesisController.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Controllers\\ComponentsControllers\\ProsthesisController.cs",
+              "RelativeToolTip": "Controllers\\ComponentsControllers\\ProsthesisController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T16:23:38.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProsthesisVM.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\ViewModel\\ProsthesisVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ProsthesisVM.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\ViewModel\\ProsthesisVM.cs",
+              "RelativeToolTip": "ViewModel\\ProsthesisVM.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T16:02:19.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Prosthesis.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Models\\ProsthesisM\\Prosthesis.cs",
+              "RelativeDocumentMoniker": "Models\\ProsthesisM\\Prosthesis.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Models\\ProsthesisM\\Prosthesis.cs",
+              "RelativeToolTip": "Models\\ProsthesisM\\Prosthesis.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T15:58:44.371Z"
             }
           ]
         }

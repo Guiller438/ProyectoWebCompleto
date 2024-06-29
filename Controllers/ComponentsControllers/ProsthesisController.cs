@@ -102,7 +102,6 @@ namespace IW7PP.Controllers.ComponentsControllers
         //Crear protesis
 
         [HttpGet]
-
         public IActionResult CreateProsthesis()
         {
             ViewData["SocketId"] = new SelectList(_context.Sockets, "Id", "Description");
@@ -112,19 +111,13 @@ namespace IW7PP.Controllers.ComponentsControllers
             ViewData["FootId"] = new SelectList(_context.Feet, "Id", "Name");
             ViewData["UnionSocketId"] = new SelectList(_context.UnionSockets, "Id", "Name");
             ViewData["KneeArticulateId"] = new SelectList(_context.KneeArticulates, "Id", "Name");
-            ViewData["Upper"] = new SelectList(_context.KneeArticulates, "Id", "Name");
-            ViewData["KneeArticulateId"] = new SelectList(_context.KneeArticulates, "Id", "Name");
             ViewData["UpperLimbAmputationsiD"] = new SelectList(_context.UpperLimbAmputations, "Id", "AmputationName");
             ViewData["LowerLimbAmputationsiD"] = new SelectList(_context.LowerLimbAmputations, "Id", "AmputationName");
-
-
-
 
             return View();
         }
 
         [HttpPost]
-
         public async Task<IActionResult> CreateProsthesis([Bind("Id,SocketId,LinerId,TubeId,FootId,UnionSocketId,KneeArticulateId,UpperLimbAmputationsiD,LowerLimbAmputationsiD,Durability,AverageDurability")] ProsthesisVM prosthesis)
         {
             if (ModelState.IsValid)
@@ -138,7 +131,8 @@ namespace IW7PP.Controllers.ComponentsControllers
                     UnionSocketId = prosthesis.UnionSocketId,
                     KneeArticulateId = prosthesis.KneeArticulateId,
                     UpperLimbAmputationsiD = prosthesis.UpperLimbAmputationsiD,
-                    LowerLimbAmputationsiD = prosthesis.LowerLimbAmputationsiD
+                    LowerLimbAmputationsiD = prosthesis.LowerLimbAmputationsiD,
+                    FechaRegistro = DateTime.Now // Establece la fecha de registro a la fecha actual
                 };
 
                 userProsthesis.Durability = CalculateDurability(userProsthesis);
@@ -147,25 +141,20 @@ namespace IW7PP.Controllers.ComponentsControllers
                 _context.Prostheses.Add(userProsthesis);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-
-            }
-            else
-            {
-                ViewData["SocketId"] = new SelectList(_context.Sockets, "Id", "Description");
-                ViewData["LinerId"] = new SelectList(_context.Liners, "Id", "Name");
-                ViewData["TubeId"] = new SelectList(_context.Tubes, "Id", "Name");
-                ViewData["KneeArticulatedId"] = new SelectList(_context.KneeArticulates, "Id", "Name");
-                ViewData["FootId"] = new SelectList(_context.Feet, "Id", "Name");
-                ViewData["UnionSocketId"] = new SelectList(_context.UnionSockets, "Id", "Name");
-                ViewData["KneeArticulateId"] = new SelectList(_context.KneeArticulates, "Id", "Name");
-                ViewData["Upper"] = new SelectList(_context.KneeArticulates, "Id", "Name");
-                ViewData["KneeArticulateId"] = new SelectList(_context.KneeArticulates, "Id", "Name");
-                ViewData["UpperLimbAmputationsiD"] = new SelectList(_context.UpperLimbAmputations, "Id", "AmputationName");
-                ViewData["LowerLimbAmputationsiD"] = new SelectList(_context.LowerLimbAmputations, "Id", "AmputationName");
-
-                return View(prosthesis);
             }
 
+            // Si no es válido, vuelve a cargar las listas de selección
+            ViewData["SocketId"] = new SelectList(_context.Sockets, "Id", "Description");
+            ViewData["LinerId"] = new SelectList(_context.Liners, "Id", "Name");
+            ViewData["TubeId"] = new SelectList(_context.Tubes, "Id", "Name");
+            ViewData["KneeArticulatedId"] = new SelectList(_context.KneeArticulates, "Id", "Name");
+            ViewData["FootId"] = new SelectList(_context.Feet, "Id", "Name");
+            ViewData["UnionSocketId"] = new SelectList(_context.UnionSockets, "Id", "Name");
+            ViewData["KneeArticulateId"] = new SelectList(_context.KneeArticulates, "Id", "Name");
+            ViewData["UpperLimbAmputationsiD"] = new SelectList(_context.UpperLimbAmputations, "Id", "AmputationName");
+            ViewData["LowerLimbAmputationsiD"] = new SelectList(_context.LowerLimbAmputations, "Id", "AmputationName");
+
+            return View(prosthesis);
         }
 
 
@@ -436,8 +425,39 @@ namespace IW7PP.Controllers.ComponentsControllers
 
             return componentCount > 0 ? totalDurability / componentCount : 0;
         }
+        [HttpGet]
+        public async Task<IActionResult> UpdateProsthesisDates()
+        {
+            var prostheses = await _context.Prostheses
+                .Select(p => new ProsthesisVM
+                {
+                    Id = p.Id,
+                    FechaRegistro = p.FechaRegistro
+                })
+                .ToListAsync();
 
+            return View(prostheses);
+        }
 
+        [HttpPost]
+        public async Task<IActionResult> UpdateProsthesisDatesPost()
+        {
+            var prostheses = await _context.Prostheses.ToListAsync();
+            Random rnd = new Random();
+
+            foreach (var prosthesis in prostheses)
+            {
+                // Genera una fecha aleatoria entre una fecha de inicio y hoy
+                DateTime start = new DateTime(2020, 1, 1);
+                int range = (DateTime.Today - start).Days;
+                prosthesis.FechaRegistro = start.AddDays(rnd.Next(range));
+
+                _context.Prostheses.Update(prosthesis);
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(UpdateProsthesisDates));
+        }
 
     }
 

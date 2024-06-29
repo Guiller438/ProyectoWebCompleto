@@ -22,6 +22,10 @@ namespace IW7PP.Models.ProsthesisM
 
         public double AverageDurability { get; set; }
 
+
+        [DataType(DataType.Date)]
+        public DateTime FechaRegistro { get; set; }
+
         // Navigation properties
         public Socket Socket { get; set; }
         public Liner Liner { get; set; }
@@ -31,6 +35,7 @@ namespace IW7PP.Models.ProsthesisM
         public KneeArticulate RodillaArticulada { get; set; }
         public UpperLimbAmputation UpperLimbAmputations { get; set; }
         public LowerLimbAmputation LowerLimbAmputations { get; set;}
+
 
 
     }

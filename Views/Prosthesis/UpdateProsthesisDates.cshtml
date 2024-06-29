@@ -1,0 +1,31 @@
+﻿@model IEnumerable<IW7PP.ViewModel.ProsthesisVM>
+
+@{
+    ViewData["Title"] = "Actualizar Fechas de Prótesis";
+}
+
+<h2>Actualizar Fechas de Prótesis</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Fecha de Registro</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var prosthesis in Model)
+        {
+            <tr>
+                <td>@prosthesis.Id</td>
+                <td>@prosthesis.FechaRegistro.ToString("yyyy-MM-dd")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<form asp-action="UpdateProsthesisDatesPost" method="post">
+    <div class="form-group">
+        <input type="submit" value="Actualizar Fechas" class="btn btn-primary" />
+    </div>
+</form>

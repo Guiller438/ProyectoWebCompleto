@@ -1,0 +1,105 @@
+﻿@model IW7PP.ViewModel.ProsthesisFilterVM
+
+@{
+    ViewData["Title"] = "Filtrar Prótesis";
+}
+
+<h2>Filtrar Prótesis</h2>
+
+<form asp-action="FilterProsthesis" method="post">
+    <div class="form-group">
+        <label for="StartDate">Fecha de Inicio</label>
+        <input type="date" asp-for="StartDate" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="EndDate">Fecha de Fin</label>
+        <input type="date" asp-for="EndDate" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Filtrar" class="btn btn-primary" />
+    </div>
+</form>
+
+@if (Model.UpperProstheses != null && Model.UpperProstheses.Count > 0)
+{
+    <h3>Mejores Prótesis de Upper Limb</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Fecha de Registro</th>
+                <th>Durabilidad</th>
+                <th>Durabilidad Promedio</th>
+                <th>Socket</th>
+                <th>Liner</th>
+                <th>Tube</th>
+                <th>Foot</th>
+                <th>Union Socket</th>
+                <th>Knee Articulate</th>
+                <th>Tipo de Amputación</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var prosthesis in Model.UpperProstheses)
+            {
+                <tr>
+                    <td>@prosthesis.Id</td>
+                    <td>@prosthesis.FechaRegistro.ToString("yyyy-MM-dd")</td>
+                    <td>@prosthesis.Durability</td>
+                    <td>@prosthesis.AverageDurability</td>
+                    <td>@ViewData["SocketName_" + prosthesis.SocketId]</td>
+                    <td>@ViewData["LinerName_" + prosthesis.LinerId]</td>
+                    <td>@ViewData["TubeName_" + prosthesis.TubeId]</td>
+                    <td>@ViewData["FootName_" + prosthesis.FootId]</td>
+                    <td>@ViewData["UnionSocketName_" + prosthesis.UnionSocketId]</td>
+                    <td>@ViewData["KneeArticulateName_" + prosthesis.KneeArticulateId]</td>
+                    <td>Upper Limb</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@if (Model.LowerProstheses != null && Model.LowerProstheses.Count > 0)
+{
+    <h3>Mejores Prótesis de Lower Limb</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Fecha de Registro</th>
+                <th>Durabilidad</th>
+                <th>Durabilidad Promedio</th>
+                <th>Socket</th>
+                <th>Liner</th>
+                <th>Tube</th>
+                <th>Foot</th>
+                <th>Union Socket</th>
+                <th>Knee Articulate</th>
+                <th>Tipo de Amputación</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var prosthesis in Model.LowerProstheses)
+            {
+                <tr>
+                    <td>@prosthesis.Id</td>
+                    <td>@prosthesis.FechaRegistro.ToString("yyyy-MM-dd")</td>
+                    <td>@prosthesis.Durability</td>
+                    <td>@prosthesis.AverageDurability</td>
+                    <td>@ViewData["SocketName_" + prosthesis.SocketId]</td>
+                    <td>@ViewData["LinerName_" + prosthesis.LinerId]</td>
+                    <td>@ViewData["TubeName_" + prosthesis.TubeId]</td>
+                    <td>@ViewData["FootName_" + prosthesis.FootId]</td>
+                    <td>@ViewData["UnionSocketName_" + prosthesis.UnionSocketId]</td>
+                    <td>@ViewData["KneeArticulateName_" + prosthesis.KneeArticulateId]</td>
+                    <td>Lower Limb</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No se encontraron prótesis en el rango de fechas especificado.</p>
+}
