@@ -4577,11 +4577,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\IW7PP.csproj",
+      "projectUniqueName": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\IW7PP.csproj",
       "projectName": "IW7PP",
-      "projectPath": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\IW7PP.csproj",
+      "projectPath": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\IW7PP.csproj",
       "packagesPath": "C:\\Users\\guill\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\obj\\",
+      "outputPath": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4662,7 +4662,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

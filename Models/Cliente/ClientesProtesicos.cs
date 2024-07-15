@@ -24,6 +24,10 @@ namespace IW7PP.Models.Cliente
         [MinLength(10)]
         public string PhoneNumber { get; set; }
 
+        public double DonationGoal { get; set; }
+
+        public double DonationStatus { get; set; }
+
         // Conexion con protesis
         [ForeignKey("Prosthesis")]
         public int? ProtesisId { get; set; }

@@ -1,41 +1,77 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\",
+  "WorkspaceRootPath": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\reactproject\\proyectowebcompleto\\views\\panel\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\panel\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\reactproject\\proyectowebcompleto\\controllers\\donations\\donationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:controllers\\donations\\donationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\reactproject\\proyectowebcompleto\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\reactproject\\proyectowebcompleto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\reactproject\\proyectowebcompleto\\viewmodel\\donationsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:viewmodel\\donationsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\reactproject\\proyectowebcompleto\\models\\donations\\donationrequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:models\\donations\\donationrequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\reactproject\\proyectowebcompleto\\models\\cliente\\clientesprotesicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:models\\cliente\\clientesprotesicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\reactproject\\proyectowebcompleto\\controllers\\cliente\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:controllers\\cliente\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\reactproject\\proyectowebcompleto\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\reactproject\\proyectowebcompleto\\views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\controllers\\componentscontrollers\\componentusagestatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\reactproject\\proyectowebcompleto\\controllers\\componentscontrollers\\componentusagestatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:controllers\\componentscontrollers\\componentusagestatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\views\\components\\filterprosthesis.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\reactproject\\proyectowebcompleto\\views\\components\\filterprosthesis.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\components\\filterprosthesis.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\views\\components\\componentusage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\reactproject\\proyectowebcompleto\\views\\components\\componentusage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\components\\componentusage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\views\\prosthesis\\updateprosthesisdates.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\reactproject\\proyectowebcompleto\\views\\prosthesis\\updateprosthesisdates.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:views\\prosthesis\\updateprosthesisdates.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\viewmodel\\prosthesisfiltervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\reactproject\\proyectowebcompleto\\viewmodel\\prosthesisfiltervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:viewmodel\\prosthesisfiltervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\controllers\\componentscontrollers\\prosthesiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\reactproject\\proyectowebcompleto\\controllers\\componentscontrollers\\prosthesiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:controllers\\componentscontrollers\\prosthesiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\models\\prosthesism\\prosthesis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\reactproject\\proyectowebcompleto\\models\\prosthesism\\prosthesis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:models\\prosthesism\\prosthesis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\iw7\\iw7pp - copia (2)\\viewmodel\\prosthesisvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|c:\\users\\guill\\desktop\\reactproject\\proyectowebcompleto\\viewmodel\\prosthesisvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A15FDA1-9711-44F1-BDAC-54B0ED133F54}|IW7PP.csproj|solutionrelative:viewmodel\\prosthesisvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -51,10 +87,118 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Views\\Panel\\Admin.cshtml",
+              "RelativeDocumentMoniker": "Views\\Panel\\Admin.cshtml",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Views\\Panel\\Admin.cshtml",
+              "RelativeToolTip": "Views\\Panel\\Admin.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-15T03:14:25.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DonationsController.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Controllers\\Donations\\DonationsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Donations\\DonationsController.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Controllers\\Donations\\DonationsController.cs",
+              "RelativeToolTip": "Controllers\\Donations\\DonationsController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T03:13:38.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T03:12:18.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DonationsVM.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\ViewModel\\DonationsVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\DonationsVM.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\ViewModel\\DonationsVM.cs",
+              "RelativeToolTip": "ViewModel\\DonationsVM.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T03:10:49.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DonationRequests.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Models\\Donations\\DonationRequests.cs",
+              "RelativeDocumentMoniker": "Models\\Donations\\DonationRequests.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Models\\Donations\\DonationRequests.cs",
+              "RelativeToolTip": "Models\\Donations\\DonationRequests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T03:10:34.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClientesProtesicos.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Models\\Cliente\\ClientesProtesicos.cs",
+              "RelativeDocumentMoniker": "Models\\Cliente\\ClientesProtesicos.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Models\\Cliente\\ClientesProtesicos.cs",
+              "RelativeToolTip": "Models\\Cliente\\ClientesProtesicos.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T03:09:41.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Controllers\\Cliente\\ClienteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Cliente\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Controllers\\Cliente\\ClienteController.cs",
+              "RelativeToolTip": "Controllers\\Cliente\\ClienteController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T03:07:45.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-15T03:08:07.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T03:08:05.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Views\\Users\\Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Views\\Users\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Users\\Login.cshtml",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Views\\Users\\Login.cshtml",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Views\\Users\\Login.cshtml",
               "RelativeToolTip": "Views\\Users\\Login.cshtml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-29T00:00:55.26Z",
@@ -62,67 +206,66 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "ComponentUsage.cshtml",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Views\\Components\\ComponentUsage.cshtml",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Views\\Components\\ComponentUsage.cshtml",
               "RelativeDocumentMoniker": "Views\\Components\\ComponentUsage.cshtml",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Views\\Components\\ComponentUsage.cshtml",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Views\\Components\\ComponentUsage.cshtml",
               "RelativeToolTip": "Views\\Components\\ComponentUsage.cshtml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-15T17:17:37.972Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "FilterProsthesis.cshtml",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Views\\Components\\FilterProsthesis.cshtml",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Views\\Components\\FilterProsthesis.cshtml",
               "RelativeDocumentMoniker": "Views\\Components\\FilterProsthesis.cshtml",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Views\\Components\\FilterProsthesis.cshtml",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Views\\Components\\FilterProsthesis.cshtml",
               "RelativeToolTip": "Views\\Components\\FilterProsthesis.cshtml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-15T16:36:50.62Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "ComponentUsageStatistics.cs",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Controllers\\ComponentsControllers\\ComponentUsageStatistics.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Controllers\\ComponentsControllers\\ComponentUsageStatistics.cs",
               "RelativeDocumentMoniker": "Controllers\\ComponentsControllers\\ComponentUsageStatistics.cs",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Controllers\\ComponentsControllers\\ComponentUsageStatistics.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Controllers\\ComponentsControllers\\ComponentUsageStatistics.cs",
               "RelativeToolTip": "Controllers\\ComponentsControllers\\ComponentUsageStatistics.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T16:33:55.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-15T16:33:55.12Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "ProsthesisFilterVM.cs",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\ViewModel\\ProsthesisFilterVM.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\ViewModel\\ProsthesisFilterVM.cs",
               "RelativeDocumentMoniker": "ViewModel\\ProsthesisFilterVM.cs",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\ViewModel\\ProsthesisFilterVM.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\ViewModel\\ProsthesisFilterVM.cs",
               "RelativeToolTip": "ViewModel\\ProsthesisFilterVM.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T16:32:42.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "UpdateProsthesisDates.cshtml",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Views\\Prosthesis\\UpdateProsthesisDates.cshtml",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Views\\Prosthesis\\UpdateProsthesisDates.cshtml",
               "RelativeDocumentMoniker": "Views\\Prosthesis\\UpdateProsthesisDates.cshtml",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Views\\Prosthesis\\UpdateProsthesisDates.cshtml",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Views\\Prosthesis\\UpdateProsthesisDates.cshtml",
               "RelativeToolTip": "Views\\Prosthesis\\UpdateProsthesisDates.cshtml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-15T16:24:15.699Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "ProsthesisController.cs",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Controllers\\ComponentsControllers\\ProsthesisController.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Controllers\\ComponentsControllers\\ProsthesisController.cs",
               "RelativeDocumentMoniker": "Controllers\\ComponentsControllers\\ProsthesisController.cs",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Controllers\\ComponentsControllers\\ProsthesisController.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Controllers\\ComponentsControllers\\ProsthesisController.cs",
               "RelativeToolTip": "Controllers\\ComponentsControllers\\ProsthesisController.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T16:23:38.903Z",
@@ -130,22 +273,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "ProsthesisVM.cs",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\ViewModel\\ProsthesisVM.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\ViewModel\\ProsthesisVM.cs",
               "RelativeDocumentMoniker": "ViewModel\\ProsthesisVM.cs",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\ViewModel\\ProsthesisVM.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\ViewModel\\ProsthesisVM.cs",
               "RelativeToolTip": "ViewModel\\ProsthesisVM.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T16:02:19.359Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "Prosthesis.cs",
-              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Models\\ProsthesisM\\Prosthesis.cs",
+              "DocumentMoniker": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Models\\ProsthesisM\\Prosthesis.cs",
               "RelativeDocumentMoniker": "Models\\ProsthesisM\\Prosthesis.cs",
-              "ToolTip": "C:\\Users\\guill\\Desktop\\IW7\\IW7PP - copia (2)\\Models\\ProsthesisM\\Prosthesis.cs",
+              "ToolTip": "C:\\Users\\guill\\Desktop\\ReactProject\\ProyectoWebCompleto\\Models\\ProsthesisM\\Prosthesis.cs",
               "RelativeToolTip": "Models\\ProsthesisM\\Prosthesis.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T15:58:44.371Z"

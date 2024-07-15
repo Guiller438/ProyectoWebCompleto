@@ -1,6 +1,7 @@
 ﻿using IW7PP.Models;
 using IW7PP.Models.Amputations;
 using IW7PP.Models.Cliente;
+using IW7PP.Models.Donations;
 using IW7PP.Models.ProsthesisM;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -38,6 +39,8 @@ namespace IW7PP.Data
         public DbSet<LifeStyle> LifeStyles { get; set; }
 
         public DbSet<ClientesProtesicos> ClientesProtesicos { get; set; }
+
+        public DbSet<DonationRequests> Donaciones { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)

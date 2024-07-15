@@ -282,7 +282,29 @@ namespace IW7PP.Controllers.Cliente
         }
 
 
+        [HttpPost]
+        public async Task<IActionResult> SetDonationGoals()
+        {
+            var clientes = await _context.ClientesProtesicos.ToListAsync();
+            Random rnd = new Random();
 
+            foreach (var cliente in clientes)
+            {
+                double donationstatus = Math.Round((double)(rnd.Next(500, 5000) + rnd.NextDouble()));
+                if (donationstatus < cliente.DonationGoal)
+                {
+                    cliente.DonationStatus = donationstatus;
+                }
+                else
+                {
+                    cliente.DonationStatus = Math.Round(cliente.DonationGoal * 0.9, 2);
+                }
+                _context.ClientesProtesicos.Update(cliente);
+            }
+
+            await _context.SaveChangesAsync();
+            return Ok(new { message = "Metas de donaciones actualizadas correctamente." });
+        }
 
 
     }

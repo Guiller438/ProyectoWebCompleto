@@ -1,1 +1,54 @@
-[]
+[
+  {
+    "ContainingType": "IW7PP.Controllers.Donations.DonationsController",
+    "Method": "Create",
+    "RelativePath": "api/Donations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "donationRequestVM",
+        "Type": "IW7PP.ViewModel.DonationsVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IW7PP.Controllers.Donations.DonationsController",
+    "Method": "GetClients",
+    "RelativePath": "api/Donations/clients",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IW7PP.Controllers.Donations.DonationsController",
+    "Method": "GetClientsWithDonations",
+    "RelativePath": "api/Donations/clientsWithDonations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IW7PP.Controllers.Donations.DonationsController",
+    "Method": "SetDonationGoals",
+    "RelativePath": "api/Donations/setDonationGoals",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "donationGoals",
+        "Type": "System.Collections.Generic.List\u00601[[IW7PP.Models.Cliente.ClientesProtesicos, IW7PP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -17,271 +17,271 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = IW7PP
 build_property.RootNamespace = IW7PP
-build_property.ProjectDir = C:\Users\guill\Desktop\IW7\IW7PP - copia (2)\
+build_property.ProjectDir = C:\Users\guill\Desktop\ReactProject\ProyectoWebCompleto\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\guill\Desktop\IW7\IW7PP - copia (2)
+build_property.MSBuildProjectDirectory = C:\Users\guill\Desktop\ReactProject\ProyectoWebCompleto
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Account/EditAccount.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Account/EditAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFZGl0QWNjb3VudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Amputations/CreateAlp.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Amputations/CreateAlp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1wdXRhdGlvbnNcQ3JlYXRlQWxwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Amputations/CreateUap.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Amputations/CreateUap.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1wdXRhdGlvbnNcQ3JlYXRlVWFwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Amputations/EditAlp.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Amputations/EditAlp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1wdXRhdGlvbnNcRWRpdEFscC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Amputations/EditUap.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Amputations/EditUap.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1wdXRhdGlvbnNcRWRpdFVhcC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Amputations/Index.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Amputations/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1wdXRhdGlvbnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Amputations/LowerLimbAmputations.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Amputations/LowerLimbAmputations.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1wdXRhdGlvbnNcTG93ZXJMaW1iQW1wdXRhdGlvbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Areas/AdminView.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Areas/AdminView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJlYXNcQWRtaW5WaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Areas/ProtesistaView.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Areas/ProtesistaView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJlYXNcUHJvdGVzaXN0YVZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Cliente/AssignLifeStyle.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Cliente/AssignLifeStyle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxBc3NpZ25MaWZlU3R5bGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Cliente/CreateCliente.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Cliente/CreateCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDcmVhdGVDbGllbnRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Cliente/EditarCliente.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Cliente/EditarCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxFZGl0YXJDbGllbnRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Cliente/Index.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Cliente/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Cliente/LifeStyleView.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Cliente/LifeStyleView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxMaWZlU3R5bGVWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Components/ComponentUsage.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Components/ComponentUsage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xDb21wb25lbnRVc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Components/FilterProsthesis.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Components/FilterProsthesis.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xGaWx0ZXJQcm9zdGhlc2lzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Components/UsageStatistics.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Components/UsageStatistics.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xVc2FnZVN0YXRpc3RpY3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Feet/CreateFeet.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Feet/CreateFeet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVldFxDcmVhdGVGZWV0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Feet/EditFeet.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Feet/EditFeet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVldFxFZGl0RmVldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/KneeArticulate/CreateKnee.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/KneeArticulate/CreateKnee.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS25lZUFydGljdWxhdGVcQ3JlYXRlS25lZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/KneeArticulate/EditKnee.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/KneeArticulate/EditKnee.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS25lZUFydGljdWxhdGVcRWRpdEtuZWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/LifeStyle/CreateStyle.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/LifeStyle/CreateStyle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlmZVN0eWxlXENyZWF0ZVN0eWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/LifeStyle/EditStyle.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/LifeStyle/EditStyle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlmZVN0eWxlXEVkaXRTdHlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Liner/CreateLiner.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Liner/CreateLiner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGluZXJcQ3JlYXRlTGluZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Liner/EditLiner.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Liner/EditLiner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGluZXJcRWRpdExpbmVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Panel/Admin.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Panel/Admin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFuZWxcQWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Panel/Protesista.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Panel/Protesista.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFuZWxcUHJvdGVzaXN0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Prosthesis/CreateProsthesis.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Prosthesis/CreateProsthesis.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvc3RoZXNpc1xDcmVhdGVQcm9zdGhlc2lzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Prosthesis/EditProsthesis.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Prosthesis/EditProsthesis.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvc3RoZXNpc1xFZGl0UHJvc3RoZXNpcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Prosthesis/FeetView.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Prosthesis/FeetView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvc3RoZXNpc1xGZWV0Vmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Prosthesis/Index.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Prosthesis/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvc3RoZXNpc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Prosthesis/KneeArticulateView.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Prosthesis/KneeArticulateView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvc3RoZXNpc1xLbmVlQXJ0aWN1bGF0ZVZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Prosthesis/LinerView.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Prosthesis/LinerView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvc3RoZXNpc1xMaW5lclZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Prosthesis/SocketView.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Prosthesis/SocketView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvc3RoZXNpc1xTb2NrZXRWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Prosthesis/TubesView.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Prosthesis/TubesView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvc3RoZXNpc1xUdWJlc1ZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Prosthesis/UnionSocketsView.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Prosthesis/UnionSocketsView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvc3RoZXNpc1xVbmlvblNvY2tldHNWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Prosthesis/UpdateProsthesisDates.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Prosthesis/UpdateProsthesisDates.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvc3RoZXNpc1xVcGRhdGVQcm9zdGhlc2lzRGF0ZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Protesista/CreateProtesisManual.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Protesista/CreateProtesisManual.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdGVzaXN0YVxDcmVhdGVQcm90ZXNpc01hbnVhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Protesista/GenerateLowerProsthesis.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Protesista/GenerateLowerProsthesis.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdGVzaXN0YVxHZW5lcmF0ZUxvd2VyUHJvc3RoZXNpcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Protesista/GenerateUpperProsthesis.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Protesista/GenerateUpperProsthesis.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdGVzaXN0YVxHZW5lcmF0ZVVwcGVyUHJvc3RoZXNpcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Protesista/Index.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Protesista/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdGVzaXN0YVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Protesista/SelectAmputationType.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Protesista/SelectAmputationType.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdGVzaXN0YVxTZWxlY3RBbXB1dGF0aW9uVHlwZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Protesista/SelectProsthesisCreationMethod.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Protesista/SelectProsthesisCreationMethod.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdGVzaXN0YVxTZWxlY3RQcm9zdGhlc2lzQ3JlYXRpb25NZXRob2QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Role/Crear.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Role/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDcmVhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Role/Editar.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Role/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxFZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Role/Index.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Role/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Shared/Error.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Shared/_ClienteSearchResults.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Shared/_ClienteSearchResults.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DbGllbnRlU2VhcmNoUmVzdWx0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Shared/_Notification.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Shared/_Notification.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Socket/CreateSocket.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Socket/CreateSocket.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29ja2V0XENyZWF0ZVNvY2tldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Socket/EditSocket.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Socket/EditSocket.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29ja2V0XEVkaXRTb2NrZXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Tubes/CreateTube.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Tubes/CreateTube.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHViZXNcQ3JlYXRlVHViZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Tubes/EditTube.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Tubes/EditTube.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHViZXNcRWRpdFR1YmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/UnionSockets/CreateUnionSocket.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/UnionSockets/CreateUnionSocket.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pb25Tb2NrZXRzXENyZWF0ZVVuaW9uU29ja2V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/UnionSockets/EditUnionSocket.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/UnionSockets/EditUnionSocket.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pb25Tb2NrZXRzXEVkaXRVbmlvblNvY2tldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Users/CreateUser.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Users/CreateUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Users/Editar.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Users/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Users/Index.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Users/Login.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Users/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Users/Registro.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Users/Registro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUmVnaXN0cm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/_ViewImports.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/_ViewStart.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Shared/_Layout.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-r7mm5uvabr
 
-[C:/Users/guill/Desktop/IW7/IW7PP - copia (2)/Views/Shared/_LoginVP.cshtml]
+[C:/Users/guill/Desktop/ReactProject/ProyectoWebCompleto/Views/Shared/_LoginVP.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblZQLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-p4409nv2nt
