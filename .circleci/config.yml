@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Restaurar dependencias App
-          command: dotnet restore ProyectoWebCompleto.sln
+          command: dotnet restore IW7PP.sln
       - run:
           name: Compilar App
           command: dotnet build App/IW7PP.csproj --configuration Release
