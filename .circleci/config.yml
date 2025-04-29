@@ -7,23 +7,23 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Restaurar dependencias de la App
-          command: dotnet restore App/App.csproj
+          name: Restaurar dependencias App
+          command: dotnet restore ProyectoWebCompleto.sln
       - run:
-          name: Compilar la App
+          name: Compilar App
           command: dotnet build App/App.csproj --configuration Release
 
-  build-libs:
+  build-tests:
     docker:
       - image: mcr.microsoft.com/dotnet/sdk:latest
     steps:
       - checkout
       - run:
-          name: Restaurar dependencias de las Librerías
-          command: dotnet restore Libs/Libs.csproj
+          name: Restaurar dependencias de Tests
+          command: dotnet restore ProyectoWebCompleto.sln
       - run:
-          name: Compilar las Librerías
-          command: dotnet build Libs/Libs.csproj --configuration Release
+          name: Compilar proyecto de pruebas
+          command: dotnet build App.Tests/App.Tests.csproj --configuration Release
 
   analyze-code:
     docker:
@@ -31,12 +31,12 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Analizar Código
-          command: dotnet format --check
+          name: Analizar estilo de código
+          command: dotnet format ProyectoWebCompleto.sln --check
 
 workflows:
   parallel-workflow:
     jobs:
       - build-app
-      - build-libs
+      - build-tests
       - analyze-code
