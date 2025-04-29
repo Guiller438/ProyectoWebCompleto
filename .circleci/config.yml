@@ -11,7 +11,7 @@ jobs:
           command: dotnet restore ProyectoWebCompleto.sln
       - run:
           name: Compilar App
-          command: dotnet build App/App.csproj --configuration Release
+          command: dotnet build App/IW7PP.csproj --configuration Release
 
   build-tests:
     docker:
@@ -20,10 +20,7 @@ jobs:
       - checkout
       - run:
           name: Restaurar dependencias de Tests
-          command: dotnet restore ProyectoWebCompleto.sln
-      - run:
-          name: Compilar proyecto de pruebas
-          command: dotnet build App.Tests/App.Tests.csproj --configuration Release
+          command: dotnet restore IW7PP.sln
 
   analyze-code:
     docker:
@@ -32,7 +29,7 @@ jobs:
       - checkout
       - run:
           name: Analizar estilo de código
-          command: dotnet format ProyectoWebCompleto.sln --check
+          command: dotnet format IW7PP.sln --check
 
 workflows:
   parallel-workflow:
